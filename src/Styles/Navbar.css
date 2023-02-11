@@ -1,0 +1,40 @@
+.logo {
+    max-width: 30%;
+    height: auto;
+    max-height: 200px;
+    margin-top: 20px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+    max-height: 100px;
+    padding-left: 50px ;
+    margin-top: 10px;
+}
+
+.navbar-links-container, .nav-element {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.navbar-logos-container {
+    margin-right: 1rem;
+    color: white;
+    width: 50px;
+}
+
+.navbar-menu-container {
+    display: none;
+}
+.navbar-menu-container svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.social-icons{
+    size: 4em
+}
