@@ -1,7 +1,8 @@
+import Home from "./Components/Home";
 function App() {
   return (
     <div>
-      <h1>Enactus INSAT</h1>
+      <Home/>
     </div>
   );
 }
