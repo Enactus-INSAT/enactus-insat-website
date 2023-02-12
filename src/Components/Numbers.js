@@ -1,5 +1,5 @@
 import React from "react";
-import './Numbers.css';
+import '../Styles/Numbers.css';
 import { FaHandshake } from "react-icons/fa";
 import { GoPerson } from "react-icons/go";
 import { BsTwitter } from "react-icons/bs";
