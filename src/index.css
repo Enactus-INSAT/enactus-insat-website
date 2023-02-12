@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: 'FS Meridian';
+  src: url('./Assets/fonts/FSMeridian/FSMeridian-Medium.eot');
+  src: local('FS Meridian Medium'), local('FSMeridian-Medium'),
+  url('./Assets/fonts/FSMeridian/FSMeridian-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./Assets/fonts/FSMeridian/FSMeridian-Medium.woff2') format('woff2'),
+  url('./Assets/fonts/FSMeridian/FSMeridian-Medium.woff') format('woff'),
+  url('./Assets/fonts/FSMeridian/FSMeridian-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI Text Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SF UI Text Regular'), url('./Assets/fonts/SF UI/SFUIText-Regular.woff') format('woff');
+}
