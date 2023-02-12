@@ -1,0 +1,38 @@
+import React from "react";
+import '../Styles/newsletter.css';
+import Rectangle  from "../Assets/images/Rectangle.svg";
+
+function newsletter() {
+    return (
+      <>
+    <br></br>
+    <br></br>
+    <br></br>
+      <div className="containerout">
+        <div className="containerin">
+            <div className="containerleft">
+                <div className="Subscribe">SUBSCRIBE TO OUR NEWSLETTER</div>
+                <div className="email">Email adress</div>
+                <div className="containerform">
+                <input type="text"  placeholder="  Email*" className="form"></input>
+                <div className="bouton">Submit</div>
+
+                </div>
+                <div className="privacy">We'll never share your email with anyone else</div>
+            </div>
+            <div className="imagenewsletter"> <img src={Rectangle} width="100%"></img>  </div>
+           
+            
+        </div>
+
+
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      
+
+      </>
+    );
+}
+export default newsletter;
