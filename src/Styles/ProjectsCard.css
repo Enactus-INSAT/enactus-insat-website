@@ -1,0 +1,96 @@
+.ProjectsCard__Wrapper {
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+}
+.ProjectsCard__Overlay {
+  position: absolute;
+  z-index: 2;
+}
+.ProjectsCard__Main {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  background-color: rgb(25, 199, 54);
+}
+.ProjectsCard__DetailsBtn--Container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  /* background-color: #ff0d0d; */
+  top: 40vh;
+}
+
+.ProjectsCard__DetailsBtn {
+  min-width: 10vw;
+  min-height: 5.5vh;
+  margin-right: 15vh;
+
+  border-radius: 0.8rem;
+  border: white solid 1px;
+  font-family: "FS Meridian";
+  background-color: rgba(114, 99, 99, 0.231);
+  color: white;
+  font-size: 2vh;
+  animation: fadeEntrance 1s ease 0s 1 normal forwards;
+}
+.ProjectsCard__DetailsCard {
+  position: absolute;
+  width: 100vw;
+  height: 35vh;
+  background-color: rgba(17, 53, 153, 0.26);
+  opacity: 0.26;
+
+  bottom: 0px;
+  z-index: 4;
+}
+.ProjectsCard__Detail {
+  animation: fadeEntrance 1s ease 0s 1 normal forwards;
+}
+
+.ProjectsCard__DetailsCard > p {
+  margin: 2rem 3rem;
+  font-family: "FS Meridian";
+  color: #ff0d0d;
+  font-size: 4rem;
+  letter-spacing: 1cap;
+  animation: fadeEntrance 1s ease 0s 1 normal forwards;
+}
+
+.ProjectsCard__DetailsClose {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  max-width: 1rem;
+  max-height: 1rem;
+  margin: 0;
+  padding: 0;
+  animation: fadeEntrance 1s ease 0s 1 normal forwards;
+  cursor: pointer;
+}
+
+.ProjectsCard__None {
+  display: none;
+  animation: fadeExit 1s ease 0s 1 normal forwards;
+}
+
+@keyframes fadeEntrance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeExit {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

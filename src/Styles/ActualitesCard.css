@@ -1,0 +1,224 @@
+.ActualiteCard__Final {
+  position: relative;
+}
+.ActualiteCard__Wrap {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.ActualiteCard__Container {
+  font-family: "FS Meridian";
+  z-index: 0;
+  background-color: #ffffff;
+  margin: 2rem;
+  height: 23rem;
+  width: 23rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 4%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+  transition: all 300ms linear;
+}
+.ActualiteCard__Img {
+  height: 40%;
+  width: 100%;
+  border-radius: 0 0 30% 30%;
+  margin: 0;
+
+  transition: all 300ms linear;
+}
+
+.ActualiteCard__Title {
+  font-size: 1.5rem;
+  margin-top: 1.3rem;
+  margin-bottom: 0.8rem;
+
+  transition: all 300ms linear;
+}
+.ActualiteCard__P {
+  margin: 0 0.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+
+  transition: all 300ms linear;
+}
+.ActualiteCard__Arrow {
+  margin-top: 1.2rem;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: all 300ms linear;
+  position: absolute;
+  bottom: 3rem;
+  /* z-index: 100; */
+  filter: drop-shadow(-11px 19px 100px #000);
+}
+.ActualiteCard__Title--side {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+.ActualiteCard__P--side {
+  margin: 0 0.5rem;
+  font-size: 0.6rem;
+}
+.ActualiteCard__Arrow--side {
+  margin-top: 0.8rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.ActualiteCard__Img--left {
+  border-radius: 0 0 0 30%;
+}
+.ActualiteCard__Img--right {
+  border-radius: 0 0 30% 0;
+}
+.ActualiteCard__Img--center {
+  height: 40%;
+  width: 100%;
+  border-radius: 0 0 30% 30%;
+  margin: 0;
+}
+.ActualiteCard__Overlay {
+  transition: all 300ms linear;
+}
+.ActualiteCard__Container--side {
+  background-color: #ffffff;
+  height: 16rem;
+  width: 16rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 4%;
+}
+.ActualiteCard__Overlay--main {
+  visibility: none;
+}
+.ActualiteCard__Overlay--side {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 4%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(3.7px);
+  position: absolute;
+  height: 16rem;
+  width: 16rem;
+  z-index: 100;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.ActualiteCard__WrapDetails {
+  position: absolute;
+  top: 0rem;
+  z-index: 100;
+  display: none;
+}
+.back {
+  display: block;
+  background-color: #ffffff00;
+}
+.ActualiteCard__ContainerDetails {
+  backdrop-filter: blur(1px) brightness(91%) saturate(95%) opacity(22%);
+}
+.none > * {
+  visibility: hidden;
+  opacity: 0;
+
+  transition: visibility 0s linear 300ms, opacity 300ms;
+}
+.ActualiteCard__ArrowDetails {
+  z-index: 100;
+  left: 11.85rem;
+  transform: rotate(180deg);
+  animation: myAnim1 1s ease 0s 1 normal forwards;
+}
+.ActualiteCard__BackBackground {
+  position: absolute;
+  width: 23rem;
+  height: 23rem;
+  top: 1.99rem;
+  left: 2.01rem;
+  border-radius: 4%;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: rotate(360deg) scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+@keyframes myAnim1 {
+  0% {
+    opacity: 0;
+    transform: rotate(-360deg) scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(180) scale(1);
+  }
+}
+.front > .ActualiteCard__Arrow {
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@media screen and (max-width: 1300px) {
+  .ActualiteCard__Container {
+    width: 20rem;
+    height: 20rem;
+  }
+  .ActualiteCard__BackBackground {
+    width: 20rem;
+    height: 20rem;
+  }
+  .ActualiteCard__Arrow {
+    height: 2.5rem;
+    width: 2.5rem;
+    bottom: 2.5rem;
+  }
+  .ActualiteCard__ArrowDetails {
+    left: 11rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ActualiteCard__Container {
+    width: 18rem;
+    height: 18rem;
+  }
+  .ActualiteCard__BackBackground {
+    width: 18rem;
+    height: 18rem;
+  }
+  .ActualiteCard__Arrow {
+    height: 2rem;
+    width: 2rem;
+    bottom: 2.5rem;
+  }
+  .ActualiteCard__ArrowDetails {
+    left: 10rem;
+  }
+}

@@ -1,0 +1,62 @@
+.swiper {
+  padding-top: 0;
+  width: 100%;
+  height: 40rem;
+  z-index: 100;
+  overflow: visible;
+  overflow-x: hidden;
+  align-items: baseline;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.Slider_Pagination {
+  display: flex;
+  gap: 0.4rem;
+  position: relative;
+  bottom: 5rem;
+  width: 100%;
+  justify-content: center;
+}
+.Slider_PaginationCercle {
+  background-color: #878585;
+  width: 0.7rem;
+  height: 0.6rem;
+  border-radius: 1rem;
+  transition: all 300ms linear;
+}
+.Slider_PaginationCercleSelected {
+  width: 1.6rem;
+  background-color: #5c1f1f;
+  transition: all 300ms ease-in;
+}
+.Slider__Arrow {
+  z-index: 100;
+  position: absolute;
+  cursor: pointer;
+}
+.Slider__ArrowRight {
+  translate: 95vw -21rem;
+}
+.Slider__ArrowLeft {
+  translate: 2vw -21rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .Slider_Pagination {
+    bottom: 7rem;
+  }
+  .Slider__Arrow {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 600px) {
+}
