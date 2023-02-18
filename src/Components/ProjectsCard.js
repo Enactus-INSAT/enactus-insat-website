@@ -32,7 +32,13 @@ const ProjectsCard = (props) => {
       <img src={Overlay} className="ProjectsCard__Overlay" alt=""></img>
       <div className="ProjectsCard__Main" style={sectionStyle}>
         <div className="ProjectsCard__DetailsBtn--Container">
-          {" "}
+          <button
+            className={`ProjectsCard__DetailsBtn ProjectsCard__DonateBtn ${
+              detail ? "ProjectsCard__None" : ""
+            }`}
+          >
+            Donate{" "}
+          </button>
           <button
             className={`ProjectsCard__DetailsBtn ${
               detail ? "ProjectsCard__None" : ""

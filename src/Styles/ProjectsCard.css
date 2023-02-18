@@ -1,17 +1,18 @@
 .ProjectsCard__Wrapper {
-  width: 100vw;
-  height: 60vh;
+  width: 85vw;
+  height: 55vh;
   position: relative;
 }
 .ProjectsCard__Overlay {
   position: absolute;
   z-index: 2;
+  border-radius: 1.5rem;
 }
 .ProjectsCard__Main {
   position: relative;
-  width: 100vw;
-  height: 60vh;
-  background-color: rgb(25, 199, 54);
+  width: 85vw;
+  height: 55vh;
+  border-radius: 1.5rem;
 }
 .ProjectsCard__DetailsBtn--Container {
   position: relative;
@@ -20,26 +21,33 @@
   justify-content: flex-end;
   width: 100%;
   /* background-color: #ff0d0d; */
-  top: 40vh;
+  top: 45vh;
 }
 
 .ProjectsCard__DetailsBtn {
-  min-width: 10vw;
-  min-height: 5.5vh;
-  margin-right: 15vh;
-
-  border-radius: 0.8rem;
+  min-width: 11vw;
+  min-height: 5vh;
+  margin-right: 7vh;
+  cursor: pointer;
+  border-radius: 5rem;
   border: white solid 1px;
   font-family: "FS Meridian";
-  background-color: rgba(114, 99, 99, 0.231);
+  font-weight: 100;
+  background-color: rgba(114, 99, 99, 0);
   color: white;
   font-size: 2vh;
   animation: fadeEntrance 1s ease 0s 1 normal forwards;
 }
+.ProjectsCard__DonateBtn {
+  background-color: #993333;
+  border: #993333 solid 1px;
+  margin-right: 2vh;
+}
 .ProjectsCard__DetailsCard {
   position: absolute;
-  width: 100vw;
-  height: 35vh;
+  width: 85vw;
+  height: 30vh;
+  border-radius: 1.5rem;
   background-color: rgba(17, 53, 153, 0.26);
   opacity: 0.26;
 
@@ -93,4 +101,37 @@
   100% {
     opacity: 0;
   }
+}
+
+@media screen and (max-width: 1300px) {
+  .ProjectsCard__Wrapper {
+    width: 85vw;
+    height: 50vh;
+  }
+
+  .ProjectsCard__Main {
+    width: 85vw;
+    height: 50vh;
+  }
+  .ProjectsCard__DetailsBtn--Container {
+    top: 40vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ProjectsCard__Wrapper {
+    width: 85vw;
+    height: 38vh;
+  }
+
+  .ProjectsCard__Main {
+    width: 85vw;
+    height: 38vh;
+  }
+  .ProjectsCard__DetailsBtn--Container {
+    top: 30vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
 }

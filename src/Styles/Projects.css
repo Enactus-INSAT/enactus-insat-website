@@ -30,10 +30,10 @@
 .Projects__Btn--Container {
   position: relative;
   z-index: 100;
-  width: 95vw;
+  width: 82vw;
   display: flex;
   justify-content: space-between;
-  top: 35vh;
+  top: 34vh;
 }
 .Projects__Btn {
   cursor: pointer;
@@ -93,4 +93,30 @@
   stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
+}
+
+.Projects_Pagination {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.Projects_PaginationCercle {
+  background-color: #cac9c9;
+  width: 0.7rem;
+  height: 0.6rem;
+  border-radius: 1rem;
+  transition: all 300ms linear;
+}
+.Projects_PaginationCercleSelected {
+  width: 1.6rem;
+  background-color: #f8c159;
+  transition: all 300ms ease-in;
+}
+
+@media screen and (max-width: 1300px) {
+  .Projects_Pagination {
+  }
+}
+
+@media screen and (max-width: 800px) {
 }

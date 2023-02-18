@@ -32,9 +32,10 @@ const Slider = (props) => {
     setWindowWidth(width);
   };
   const responsive = {
-    slidesNbr: width < 1000 ? 1 : 3,
-    rewind: width >= 1300,
-    first: width < 1000,
+    slidesNbr: width < 850 ? 1 : 3,
+    rewind: width >= 1100,
+    first: width < 850,
+    spaceBetween: width < 700 ? 75 : 20,
   };
 
   // const clientWindowWidth = document.documentElement.clientWidth;
@@ -115,7 +116,7 @@ const Slider = (props) => {
         onSwiper={setSwiperRef}
         slidesPerView={responsive.slidesNbr}
         centeredSlides={true}
-        spaceBetween={20}
+        spaceBetween={responsive.spaceBetween}
         pagination={false}
         navigation={false}
         virtual

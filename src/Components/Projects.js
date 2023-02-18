@@ -66,21 +66,19 @@ export default function Projects() {
   const slidePrev = () => {
     swiperRef.slidePrev();
   };
-  const nextHandler = () => {
-    setIndex((prev) => (prev + 1 + data.length) % data.length);
-    console.log(index);
-  };
-  const previousHandler = () => {
-    setIndex((prev) => (prev + 1 + data.length) % data.length);
-    console.log(index);
-  };
 
   useEffect(() => {}, [index]);
-  const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty("--progress", 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-  };
-  // console.log(swip er.autoplay);
+  const pagination = slides.map((_, i) => {
+    return (
+      <div
+        className={`Projects_PaginationCercle ${
+          i === index ? "Projects_PaginationCercleSelected" : ""
+        }`}
+        key={`Pagination ${i}`}
+      ></div>
+    );
+  });
+
   const cards = slides.map((slideContent, index) => (
     <SwiperSlide key={slideContent} virtualIndex={index}>
       {({ isActive }) => (
@@ -92,6 +90,15 @@ export default function Projects() {
       )}
     </SwiperSlide>
   ));
+  const setSwiperRefHandler = () => {
+    if (!swiperRef?.activeIndex) {
+      if (swiperRef?.activeIndex === 0) {
+        return setIndex(0);
+      }
+      return setIndex(1);
+    }
+    setIndex(swiperRef.activeIndex);
+  };
   return (
     <>
       <div className="Projects__Wrapper">
@@ -114,8 +121,7 @@ export default function Projects() {
 
         <div className="Projects__Main">
           <Swiper
-            onNavigationNext={nextHandler}
-            onNavigationPrev={previousHandler}
+            onSlideChange={setSwiperRefHandler}
             spaceBetween={30}
             centeredSlides={true}
             onSwiper={setSwiperRef}
@@ -131,6 +137,7 @@ export default function Projects() {
             {cards}
           </Swiper>
         </div>
+        <div className="Projects_Pagination">{pagination}</div>
       </div>
     </>
   );

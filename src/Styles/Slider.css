@@ -51,12 +51,27 @@
 
 @media screen and (max-width: 1300px) {
   .Slider_Pagination {
-    bottom: 7rem;
+    bottom: 5rem;
   }
+  /* .Slider__Arrow {
+    visibility: hidden;
+  } */
+  .Slider__ArrowLeft {
+    translate: 0.9vw -21rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
   .Slider__Arrow {
     visibility: hidden;
+  }
+  .Slider_Pagination {
+    bottom: 6rem;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .Slider_Pagination {
+    bottom: 8rem;
+  }
 }

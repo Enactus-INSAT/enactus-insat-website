@@ -185,7 +185,7 @@
   animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
   .ActualiteCard__Container {
     width: 20rem;
     height: 20rem;
@@ -201,6 +201,25 @@
   }
   .ActualiteCard__ArrowDetails {
     left: 11rem;
+  }
+  .ActualiteCard__Container--side {
+    height: 12rem;
+    width: 12rem;
+  }
+  .ActualiteCard__Overlay--side {
+    height: 12rem;
+    width: 12rem;
+  }
+  .ActualiteCard__Arrow--side {
+    height: 1.5rem;
+    width: 1.5rem;
+    bottom: 2.5rem;
+  }
+  .ActualiteCard__Title--side {
+    font-size: 1rem;
+  }
+  .ActualiteCard__P--side {
+    font-size: 0.4rem;
   }
 }
 
