@@ -1,0 +1,130 @@
+.footer-container {
+    max-width: 100vw;
+    height: 200px;
+    background: #000000;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 95px 35px 40px 35px;
+    gap: 25px;
+}
+
+.footer-info {
+    display: flex;
+    gap: 120px;
+    height: 80%;
+    width: 100%;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.vertical-line-footer {
+    width: 0px;
+    height: 28.5px;
+    border: 1px solid #CFA284;
+    border-radius: 110px;
+}
+
+.text {
+    font-weight:600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 10px;
+    color: #F8C159;
+    opacity: 0.7;
+}
+
+.footer-logo-container {
+    padding:  0px 37px 0px;
+}
+
+.logo-enactus {
+    max-width: 275px;
+    height: 195px;
+}
+
+.contact-text {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    /* or 138% */
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-family: "SF UI Text Regular";
+}
+
+.address {
+    margin-left: -45px;
+}
+
+.address-text {
+    font-family: "SF UI Text Regular";
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    /* or 138% */
+    color: #FFFFFF;
+    opacity: 0.7;
+    padding-bottom: 94px;
+}
+
+.gmail-logo {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 29px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.facebook-logo {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 29px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkedin-logo {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 29px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta-logo {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 29px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

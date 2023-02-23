@@ -1,22 +1,24 @@
+import "./App.css"
+import Footer from "./Components/Footer";
 import Home from "./Components/Home";
+import Vision from "./Components/Vision";
 import Numbers from "./Components/Numbers";
-import Actualites from "./Components/Actualites";
-import Slider from "./Components/Slider";
-import Slider2 from "./Components/Slider";
+import Newsletter from "./Components/NewsLetter";
 import Projects from "./Components/Projects";
-import ProjectsCard from "./Components/ProjectsCard";
+import Activity from "./Components/Activity";
+
 function App() {
-  return (
-    <div>
-      {/* <Home />
-      <h1>htdbfvdcsxq</h1>
-      <h1>htdbfvdcsxq</h1> */}
-      <h1>htdbfvdcsxq</h1>
-      <Actualites></Actualites>
-      <Projects />
-      {/* <ProjectsCard></ProjectsCard> */}
-    </div>
-  );
+    return (
+        <div>
+            <Home/>
+            <Numbers/>
+            <Vision/>
+            <Activity/>
+            <Projects/>
+            <Newsletter/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
