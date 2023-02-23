@@ -1,0 +1,125 @@
+.container-out {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 332px;
+    margin-top: 7%;
+    z-index: 1;
+    position: relative;
+    top: 70px;
+}
+
+.container-in {
+    align-items: center;
+    width: 82%;
+    height: 100%;
+    background-color: rgba(243, 242, 231, 1);
+    box-shadow: 28px 199px 80px rgba(0, 0, 0, 0.01), 16px 112px 68px rgba(0, 0, 0, 0.05), 7px 50px 50px rgba(0, 0, 0, 0.09), 2px 12px 28px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.containerleft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Subscribe {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+
+
+    color: #121212;
+}
+
+.imagenewsletter {
+    max-width: 31%;
+    max-height: 70%;
+}
+
+.email {
+    margin-top: 28px;;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+
+}
+
+.form {
+    background: #D9D9D9;
+    margin-top: 20px;
+    padding-left: 0;
+    margin-left: 0;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 15px;
+    width: 350px;
+
+}
+
+.privacy {
+    padding-top: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.containerform {
+    display: flex;
+    gap: 20px;
+
+}
+
+.bouton {
+    width: 183px;
+    height: 50px;
+
+    background-color: #D6B06A;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-left: 0;
+    margin-left: 0;
+
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 170px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.bouton:hover {
+    background-color: #c4a262;;
+}

@@ -7,8 +7,7 @@
     display: flex;
     align-items: center;
 }
-nav{
-    /*width: 100vw;*/
+.nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,7 +17,7 @@ nav{
 }
 
 .sticky{
-    width: 100vw;
+    width: 100%;
     position: fixed;
     background: rgba(245, 245, 245, 0.5);
     display: flex;
@@ -34,8 +33,10 @@ nav{
     margin-right: 3rem;
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "FS Meridian";
+
 }
 .nav-element:hover{
     color: #F8C159;
@@ -46,8 +47,10 @@ nav{
     margin-right: 3rem;
     text-decoration: none;
     color: #555555;
-    font-size: 1.1rem;
+    font-size: 14px;
     font-weight: 600;
+    font-family: "FS Meridian";
+
 }
 .nav-element-sticky-hovered{
     opacity: 0.5;

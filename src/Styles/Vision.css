@@ -1,103 +1,85 @@
-.Background-Vision{
+.container-vision {
+    margin: 7%;
     display: flex;
-    max-width: 100vmax;
     height: fit-content;
-    padding: 90px;
-    padding-right: 93px;
-    background: #FFFFFF;
-    border-radius: 50px;
-    
+    padding: 2% 5% ;
 }
-.info{
-    flex-grow: 1;
-    width: 500px;
 
-}   
-.photo{
-    padding-left: 20px;
+.info {
+    flex-grow: 1;
+    width: 60%;
+}
+
+.photo {
     flex-grow: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 }
-.pc{
-    width: 594px;
-    height: 676px;
-    filter: drop-shadow(0px 40px 16px rgba(0, 0, 0, 0.01)) drop-shadow(0px 22px 13px rgba(0, 0, 0, 0.05)) drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.09)) drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
-    border-radius: 10px;
-    align-self: right;
-    align-self: center;
 
-    }
-.titre{
+.vision-image {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 40px 16px rgba(0, 0, 0, 0.01)) drop-shadow(0px 22px 13px rgba(0, 0, 0, 0.05)) drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.09)) drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.1)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+    border-radius: 10px
+}
+
+.titre {
     align-self: flex-start;
     width: 561.15px;
     height: 30px;
-
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 30px;
-
     text-align: justify;
-
     color: #252A34;
-    }
-    .vision-icon{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 62.8px;
-        height: 62.8px;
-        background: #424040;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-    }
-.rectangle {
-    width: 58.79px;
-    height: 2.67px;
-    background: #05A8AA;
 }
-.vision-list-item{
+.vision-icon{
+    width: 50%;
+}
+.vision-icon-container {
     display: flex;
-    gap : 50px;
-
+    align-items: center;
+    justify-content: center;
+    width: 62.8px;
+    height: 62.8px;
+    background: #424040;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
 }
+
+.vision-list-item {
+    display: flex;
+    gap: 50px;
+}
+
 .text-vision h1 {
-    margin : 0;
+    margin: 0;
     font-weight: 600;
     font-size: 22px;
     line-height: 30px;
-
     text-align: justify;
-
     color: #252A34;
-
 }
 
-.text-vision p{
-    width: 468.96px;
-    height: 53.44px;
-    font-family: 'Poppins';
+.text-vision p {
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    /* or 100% */
-
+    font-size: 16px;
     text-align: justify;
-
     color: #555555;
 }
-.vertical-line{
+
+.vertical-line {
     border-right: 2px solid rgba(146, 139, 139, 0.6);
     width: 50%;
-    height: 120px;
+    height: 60px;
     padding: 0;
     justify-self: center;
 }
-.vision-list-item:last-child .wrapper .vertical-line{
+
+.vision-list-item:last-child .wrapper .vertical-line {
     border: none;
 }
 

@@ -1,18 +1,14 @@
-.nav-container{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 3.3%, rgba(0, 0, 0, 0.6) 44.26%, rgba(0, 0, 0, 0) 126.83%);
-}
 
 .bg-img {
     width: 100%;
     height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
 }
 
-.home-banner-container{
+.home-container {
     justify-content: center;
     height: 100vh;
 }
@@ -20,7 +16,7 @@
 .home-text-section {
     position: absolute;
     left: 0px;
-    right:0px;
+    right: 0px;
     top: 23vh;
     flex: 1;
     display: flex;
@@ -39,7 +35,7 @@
     margin-bottom: 0;
 }
 
-.primary-text{
+.primary-text {
     font-family: 'SF UI Text Regular';
     font-style: normal;
     font-weight: 600;
@@ -51,6 +47,7 @@
     text-align: center;
     margin-bottom: 3vw;
 }
+
 .fund-button {
     padding: 1rem 2.5rem;
     background-color: #993333;
@@ -69,6 +66,7 @@
     margin: 0 0.3rem;
 
 }
+
 .contact-button {
     padding: 1rem 1.5rem;
     background-color: transparent;
@@ -86,7 +84,8 @@
     margin: 0 0.3rem;
 
 }
-.buttons{
-    display : flex;
+
+.buttons {
+    display: flex;
     align-content: space-between;
 }

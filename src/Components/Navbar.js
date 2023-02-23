@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, { useState} from "react";
 import "../Styles/Navbar.css";
 import lightLogo from "../Assets/logos/enactus-light.png";
 import darkLogo from "../Assets/logos/enactus-dark.png"
@@ -12,8 +12,6 @@ const menuItems = [{
     name: "VISION", link: ""
 }, {
     name: "ACTUALITIES", link: ""
-}, {
-    name: "ACTIVITIES ", link: ""
 }, {
     name: "PROJECTS", link: ""
 }, {
@@ -35,7 +33,7 @@ const Navbar = ({isSticky}) => {
     const [linkHovered, setLinkHovered] = useState(-1);
     const [iconHovered, setIconHovered] = useState(-1);
 
-    return <nav className={isSticky ? "sticky" : ""}>
+    return <nav className={isSticky ? "sticky" : "nav"}>
         <div className="navbar-logo-container">
             <img className="logo" src={isSticky ? darkLogo : lightLogo} alt=""/>
         </div>
@@ -54,7 +52,7 @@ const Navbar = ({isSticky}) => {
                         );
                     }) :
                     menuItems.map(({name, link}, index) => {
-                        return (linkHovered == index ?
+                        return (linkHovered === index ?
                                 <a href={link} className={isSticky ? "nav-element-sticky" : "nav-element"}
                                    onMouseOver={() => {
                                        setLinkHovered(index);
@@ -80,7 +78,7 @@ const Navbar = ({isSticky}) => {
                     return (
                         isSticky ?
                             <IconContext.Provider value={{
-                                className: 'social-icons', size: '2em', color: '#555555'
+                                className: 'social-icons', size: '1.5em', color: '#555555'
                             }}>
                                 <a className="logo-element" href={link}
                                    onMouseOver={() => {
@@ -93,7 +91,7 @@ const Navbar = ({isSticky}) => {
                             </IconContext.Provider>
                             :
                             <IconContext.Provider value={{
-                                className: 'social-icons', size: '2em', color: 'white'
+                                className: 'social-icons', size: '1.5em', color: 'white'
                             }}>
                                 <a className="logo-element" href=""
                                    onMouseOver={() => {
@@ -111,7 +109,7 @@ const Navbar = ({isSticky}) => {
                     return (
                         isSticky ?
                             <IconContext.Provider value={{
-                                className: 'social-icons', size: '2em', color: '#555555'
+                                className: 'social-icons', size: '1.5em', color: '#555555'
                             }}>
                                 <a className={iconHovered === index ? "logo-element" : "logo-element-hovered"}
                                    href={link}
@@ -125,7 +123,7 @@ const Navbar = ({isSticky}) => {
                             </IconContext.Provider>
                             :
                             <IconContext.Provider value={{
-                                className: 'social-icons', size: '2em', color: 'white'
+                                className: 'social-icons', size: '1.5em', color: 'white'
                             }}>
                                 <a className={iconHovered === index ? "logo-element" : "logo-element-hovered"}
                                    href={link}
