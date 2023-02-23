@@ -6,6 +6,7 @@ import Numbers from "./Components/Numbers";
 import Newsletter from "./Components/NewsLetter";
 import Projects from "./Components/Projects";
 import Activity from "./Components/Activity";
+import Actualites from "./Components/Actualites";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Vision/>
             <Activity/>
             <Projects/>
+            <Actualites/>
             <Newsletter/>
             <Footer/>
         </div>

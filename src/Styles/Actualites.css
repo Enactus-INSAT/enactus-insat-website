@@ -68,6 +68,15 @@
   }
 }
 
+.actualities-section-heading-container {
+  margin-top:10%;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
 @media screen and (max-width: 600px) {
   .Actualities__Back {
     width: 18rem;
@@ -80,3 +89,4 @@
     translate: 1.2rem 11.9rem;
   }
 }
+

@@ -39,14 +39,23 @@ const data = [
 ];
 const Actualites = (props) => {
   return (
-    <div className="Actualites_Wrap">
-      <h1 className="Actualites_Title">ACTUALITES</h1>
-      <div className="Actualites_SliderContainer">
-        <Slider data={data} />
-      </div>
-      <div className="Actualities__Back Actualities__RightBack"></div>
-      <div className="Actualities__Back Actualities__LeftBack "></div>
-    </div>
+      <>
+        <div className="actualities-section-heading-container">
+          <div className="activities-section-heading">
+            <div className="a-h-line"></div>
+            <div className="section-heading">ACTUALITIES</div>
+            <div className="a-h-line"></div>
+          </div>
+        </div>
+        <div className="Actualites_Wrap">
+          <div className="Actualites_SliderContainer">
+            <Slider data={data} />
+          </div>
+          <div className="Actualities__Back Actualities__RightBack"></div>
+          <div className="Actualities__Back Actualities__LeftBack "></div>
+        </div>
+      </>
+
   );
 };
 

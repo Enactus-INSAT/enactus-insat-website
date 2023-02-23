@@ -101,8 +101,14 @@ export default function Projects() {
   };
   return (
     <>
+      <div className="projects-section-heading-container">
+        <div className="activities-section-heading">
+          <div className="a-h-line"></div>
+          <div className="section-heading">OUR PROJECTS</div>
+          <div className="a-h-line"></div>
+        </div>
+      </div>
       <div className="Projects__Wrapper">
-        <h1>NOS PROJETS</h1>
         <div className="Projects__Btn--Container">
           {" "}
           <img

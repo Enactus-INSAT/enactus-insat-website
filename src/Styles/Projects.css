@@ -1,6 +1,15 @@
+.projects-section-heading-container {
+  margin-top: 10%;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
 .Projects__Wrapper {
   width: 100%;
-  height: 100vh;
+  height: auto;
   /* background-color: aqua; */
   display: flex;
   justify-content: flex-start;
