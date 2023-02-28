@@ -1,4 +1,4 @@
-import "./App.css"
+import "./App.css";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 import Vision from "./Components/Vision";
@@ -9,18 +9,18 @@ import Activity from "./Components/Activity";
 import Actualites from "./Components/Actualites";
 
 function App() {
-    return (
-        <div>
-            <Home/>
-            <Numbers/>
-            <Vision/>
-            <Activity/>
-            <Projects/>
-            <Actualites/>
-            <Newsletter/>
-            <Footer/>
-        </div>
-    );
+  return (
+    <div>
+      <Home />
+      <Numbers />
+      <Vision />
+      <Activity />
+      <Projects />
+      <Actualites />
+      <Newsletter />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

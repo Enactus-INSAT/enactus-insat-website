@@ -73,12 +73,14 @@ const ActualitesCard = (props) => {
         <div
           className={`ActualiteCard__Container ActualiteCard__Container--${props.type}  ${back}`}
         >
-          <h3
+          {/* <h3
             className={`ActualiteCard__Title ActualiteCard__Title--${props.type} `}
           >
             {title}
-          </h3>
+          </h3> */}
           <p className={`ActualiteCard__P ActualiteCard__P--${props.type} `}>
+            {description}
+            {description}
             {description}
           </p>
           <img

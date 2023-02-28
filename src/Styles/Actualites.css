@@ -1,14 +1,20 @@
-.Actualites_Wrap {
-  min-height: 100vh;
+.Actualites__Wrap {
+  margin-top: 6vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: flex-start; */
   position: relative;
+  /* justify-content: start; */
+  /* background-color: #4d4d4d31; */
 }
 .Actualites_SliderContainer {
-  width: 100%;
+  width: inherit;
   overflow: visible;
-  margin: 2rem;
+  position: relative;
+  /* background-color: #db1010; */
+  /* margin: 1vh; */
+  z-index: 0;
 }
 
 .Actualities__Container {
@@ -27,49 +33,29 @@
   position: absolute;
   top: 2rem;
 }
-.Actualities__Cards {
-  display: flex;
-  z-index: 1;
-}
-
-.Actualities__MainCard {
-  z-index: 100;
-  transform: translatex(-40%) scale(0.8);
-}
-
-.Actualities__RightBack {
-  translate: -1.2rem 11.8rem;
-}
-.Actualities__LeftBack {
-  translate: 1.2rem 9.3rem;
-}
 
 .Actualities__Back {
-  height: 23rem;
-  width: 23rem;
+  height: 55vh;
+  width: 55vh;
   position: absolute;
   background-color: #f9cd7a;
   border-radius: 4%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   z-index: -200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-@media screen and (max-width: 1000px) {
-  .Actualities__Back {
-    width: 20rem;
-    height: 20rem;
-  }
-  .Actualities__RightBack {
-    translate: -1.2rem 13.5rem;
-  }
-  .Actualities__LeftBack {
-    translate: 1.2rem 10.5rem;
-  }
+.Actualities__RightBack {
+  transform: translate(-45%, -55%);
+}
+.Actualities__LeftBack {
+  transform: translate(-55%, -45%);
 }
 
 .actualities-section-heading-container {
-  margin-top:10%;
+  margin-top: 10%;
   margin-bottom: 0;
   display: flex;
   flex-direction: column;
@@ -77,16 +63,8 @@
   width: 100%;
 }
 
-@media screen and (max-width: 600px) {
-  .Actualities__Back {
-    width: 18rem;
-    height: 18rem;
-  }
-  .Actualities__RightBack {
-    translate: -1.2rem 14.3rem;
-  }
-  .Actualities__LeftBack {
-    translate: 1.2rem 11.9rem;
-  }
+@media screen and (max-width: 1000px) {
 }
 
+@media screen and (max-width: 600px) {
+}

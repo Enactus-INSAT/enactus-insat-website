@@ -1,77 +1,75 @@
-.swiper {
-  padding-top: 0;
-  width: 100%;
-  height: 40rem;
-  z-index: 100;
-  overflow: visible;
-  overflow-x: hidden;
-  align-items: baseline;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
+.Slider__SwiperSlide {
+  /* background-color: #5c1f1f54; */
+  /* width: inherit; */
+  height: 60vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  cursor: grab;
+  justify-content: center;
+  z-index: -1;
+  overflow: visible;
 }
-
+.Slider__Swiper {
+  /* background-color: rgba(207, 126, 19, 0.507); */
+  z-index: -1;
+}
 .Slider_Pagination {
   display: flex;
   gap: 0.4rem;
-  position: relative;
-  bottom: 5rem;
+  margin-top: 2vh;
+  /* background-color: #5c1f1f; */
+  /* position: relative; */
+  /* bottom: 5rem; */
   width: 100%;
   justify-content: center;
 }
 .Slider_PaginationCercle {
   background-color: #878585;
-  width: 0.7rem;
-  height: 0.6rem;
-  border-radius: 1rem;
+  width: 2vh;
+  height: 2vh;
+  border-radius: 1vh;
   transition: all 300ms linear;
 }
 .Slider_PaginationCercleSelected {
-  width: 1.6rem;
+  width: 4vh;
   background-color: #5c1f1f;
   transition: all 300ms ease-in;
 }
+.Silder_ArrowsWrapper {
+  position: absolute;
+  display: flex;
+  /* background-color: blue; */
+  width: 97%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .Slider__Arrow {
   z-index: 100;
-  position: absolute;
+  /* position: absolute; */
   cursor: pointer;
+  /* z-index: 1; */
+
+  /* top: 50rem; */
 }
 .Slider__ArrowRight {
-  translate: 95vw -21rem;
+  /* translate: 95vw -21rem; */
 }
 .Slider__ArrowLeft {
-  translate: 2vw -21rem;
+  /* translate: 2vw -21rem; */
 }
 
 @media screen and (max-width: 1300px) {
-  .Slider_Pagination {
-    bottom: 5rem;
-  }
-  /* .Slider__Arrow {
-    visibility: hidden;
-  } */
-  .Slider__ArrowLeft {
-    translate: 0.9vw -21rem;
-  }
 }
 
 @media screen and (max-width: 1100px) {
-  .Slider__Arrow {
-    visibility: hidden;
-  }
-  .Slider_Pagination {
-    bottom: 6rem;
+  .Silder_ArrowsWrapper {
+    display: none;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .Slider_Pagination {
-    bottom: 8rem;
-  }
 }

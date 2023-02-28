@@ -1,17 +1,21 @@
 .ProjectsCard__Wrapper {
-  width: 85vw;
-  height: 55vh;
+  width: inherit;
+  height: inherit;
+  /* background-color: aqua; */
   position: relative;
 }
 .ProjectsCard__Overlay {
   position: absolute;
   z-index: 2;
+  box-sizing: border-box;
   border-radius: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.301);
+  width: inherit;
+  height: inherit;
 }
 .ProjectsCard__Main {
-  position: relative;
-  width: 85vw;
-  height: 55vh;
+  width: inherit;
+  height: inherit;
   border-radius: 1.5rem;
 }
 .ProjectsCard__DetailsBtn--Container {
@@ -20,8 +24,10 @@
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   /* background-color: #ff0d0d; */
-  top: 45vh;
 }
 
 .ProjectsCard__DetailsBtn {
@@ -45,11 +51,13 @@
 }
 .ProjectsCard__DetailsCard {
   position: absolute;
-  width: 85vw;
-  height: 30vh;
+  width: inherit;
+  height: fit-content;
+  max-height: 100%;
   border-radius: 1.5rem;
   background-color: rgba(17, 53, 153, 0.26);
   opacity: 0.26;
+  overflow: hidden;
 
   bottom: 0px;
   z-index: 4;
@@ -60,9 +68,10 @@
 
 .ProjectsCard__DetailsCard > p {
   margin: 2rem 3rem;
+  text-align: justify;
   font-family: "FS Meridian";
-  color: #ff0d0d;
-  font-size: 4rem;
+  color: #fffcfc;
+  font-size: 1rem;
   letter-spacing: 1cap;
   animation: fadeEntrance 1s ease 0s 1 normal forwards;
 }
@@ -80,8 +89,11 @@
 }
 
 .ProjectsCard__None {
+  animation: fadeExit 1s ease 0s 1 normal backwards;
   display: none;
-  animation: fadeExit 1s ease 0s 1 normal forwards;
+}
+.ProjectsCard__None1 {
+  display: none;
 }
 
 @keyframes fadeEntrance {
@@ -104,22 +116,22 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .ProjectsCard__Wrapper {
+  /* .ProjectsCard__Wrapper {
     width: 85vw;
-    height: 50vh;
+    height: 60vh;
   }
 
   .ProjectsCard__Main {
     width: 85vw;
-    height: 50vh;
+    height: 60vh;
   }
   .ProjectsCard__DetailsBtn--Container {
     top: 40vh;
-  }
+  } */
 }
 
 @media screen and (max-width: 800px) {
-  .ProjectsCard__Wrapper {
+  /* .ProjectsCard__Wrapper {
     width: 85vw;
     height: 38vh;
   }
@@ -130,7 +142,7 @@
   }
   .ProjectsCard__DetailsBtn--Container {
     top: 30vh;
-  }
+  } */
 }
 
 @media screen and (max-width: 600px) {

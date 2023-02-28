@@ -1,24 +1,24 @@
 import React, { useState, useEffect, useRef } from "react";
-import SwiperCore, { Virtual } from "swiper";
-import ArrowRight from "../Assets/icons/arrow-right.svg";
-import ArrowLeft from "../Assets/icons/arrow-left.svg";
+// import SwiperCore, { Virtual } from "swiper";
+// import ArrowRight from "../Assets/icons/arrow-right.svg";
+// import ArrowLeft from "../Assets/icons/arrow-left.svg";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 
-import ActualitesCard from "./ActualitesCard";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "../Styles/Slider.css";
+// // import ActualitesCard from "./ActualitesCard";
+// // Import Swiper styles
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import "swiper/css/navigation";
+// import "../Styles/Slider.css";
+// SwiperCore.use([Virtual]);
 
 // install Virtual module
-SwiperCore.use([Virtual]);
 
 const Slider = (props) => {
   const { data } = props;
-  const [index, setIndex] = useState(0);
-  const [swiperRef, setSwiperRef] = useState(null);
+  // const [index, setIndex] = useState(0);
+  // const [swiperRef, setSwiperRef] = useState(null);
 
   const [width, setWindowWidth] = useState(0);
   useEffect(() => {
@@ -37,67 +37,50 @@ const Slider = (props) => {
     first: width < 850,
     spaceBetween: width < 700 ? 75 : 20,
   };
+  // const [slides, setSlides] = useState(
+  //   Array.from({ length: 4 }).map((_, index) => `Actualite ${index + 1}`)
+  // );
 
-  // const clientWindowWidth = document.documentElement.clientWidth;
+  // const slideNext = () => {
+  //   swiperRef.slideNext();
+  // };
+  // const slidePrev = () => {
+  //   swiperRef.slidePrev();
+  // };
+  // useEffect(() => {}, [index]);
+  // useEffect(() => {}, [slides]);
+  // const cards = slides.map((slideContent, index) => (
+  // <SwiperSlide key={slideContent} virtualIndex={index}>
+  //   <ActualitesCard
+  //     key={slideContent}
+  //     data={data[index % data.length]}
+  //     position={`${isActive ? "center" : `${isNext ? "left" : "right"}`}`}
+  //     type={isActive ? "main" : "side"}
+  //     className="Actualities__MainCard"
+  //   />
+  // </SwiperSlide>;
+  // ));
 
-  // console.log(clientWindowWidth);
-  // let slidesNbr = 3;
-  // let rewind = true;
-  // let first = false;
-  // if (clientWindowWidth < 1300) {
-  //   rewind = false;
-  // }
-  // if (clientWindowWidth < 1000) {
-  //   first = true;
-  //   slidesNbr = 1;
-  // }
-  const slides = Array.from({ length: data.length }).map(
-    (_, index) => `Slide ${index + 1}`
-  );
+  // const pagination = slides.map((_, i) => {
+  //   return (
+  //     <div
+  //       className={`Slider_PaginationCercle ${
+  //         i === index ? "Slider_PaginationCercleSelected" : ""
+  //       }`}
+  //       key={`Pagination ${i}`}
+  //     ></div>
+  //   );
+  // // });
 
-  const slideNext = () => {
-    swiperRef.slideNext();
-  };
-  const slidePrev = () => {
-    swiperRef.slidePrev();
-  };
-  useEffect(() => {}, [index]);
-  useEffect(() => {}, [slides]);
-  const cards = slides.map((slideContent, index) => (
-    <SwiperSlide key={slideContent} virtualIndex={index}>
-      {({ isActive, isNext }) => {
-        return (
-          <ActualitesCard
-            data={data[index % data.length]}
-            position={`${isActive ? "center" : `${isNext ? "left" : "right"}`}`}
-            type={isActive ? "main" : "side"}
-            className="Actualities__MainCard"
-          />
-        );
-      }}
-    </SwiperSlide>
-  ));
-
-  const pagination = slides.map((_, i) => {
-    return (
-      <div
-        className={`Slider_PaginationCercle ${
-          i === index ? "Slider_PaginationCercleSelected" : ""
-        }`}
-        key={`Pagination ${i}`}
-      ></div>
-    );
-  });
-
-  const setSwiperRefHandler = () => {
-    if (!swiperRef?.activeIndex) {
-      if (swiperRef?.activeIndex === 0) {
-        return setIndex(0);
-      }
-      return setIndex(1);
-    }
-    setIndex(swiperRef.activeIndex);
-  };
+  // const setSwiperRefHandler = () => {
+  //   if (!swiperRef?.activeIndex) {
+  //     if (swiperRef?.activeIndex === 0) {
+  //       return setIndex(0);
+  //     }
+  //     return setIndex(1);
+  //   }
+  //   setIndex(swiperRef.activeIndex);
+  // };
   const initHandler = () => {
     if (!responsive.first) {
       setTimeout(() => {
@@ -111,7 +94,7 @@ const Slider = (props) => {
 
   return (
     <>
-      <Swiper
+      {/* <Swiper
         initialSlide={0}
         onSwiper={setSwiperRef}
         slidesPerView={responsive.slidesNbr}
@@ -121,11 +104,21 @@ const Slider = (props) => {
         navigation={false}
         virtual
         speed={300}
-        rewind={responsive.rewind}
+        // rewind={responsive.rewind}
+        loop={true}
         onSlideChange={setSwiperRefHandler}
+        className="Slider_Swiper"
       >
-        {cards}
-      </Swiper>
+        {cards} */}
+      {/* <div
+          style={{
+            width: 100,
+            height: 100,
+            backgroundColor: "#000000",
+          }}
+
+        ></div> */}
+      {/* </Swiper>
       <div className="Slider_Pagination">{pagination}</div>
       <img
         className="Slider__Arrow Slider__ArrowLeft"
@@ -139,7 +132,7 @@ const Slider = (props) => {
         onClick={() => slideNext()}
         alt=""
         onLoad={initHandler}
-      ></img>
+      ></img> */}
     </>
   );
 };

@@ -43,22 +43,15 @@ const data = [
 ];
 
 export default function Projects() {
-  const clientWindowWidth = document.documentElement.clientWidth;
-  console.log(clientWindowWidth);
-  let slidesNbr = 3;
-  if (clientWindowWidth < 1) {
-    slidesNbr = 1;
-  }
-  const progressCircle = useRef(null);
+  console.log(
+    "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
+  );
   const [index, setIndex] = useState(0);
-  const [Ref, setRef] = useState(0);
 
-  const progressContent = useRef(null);
   const [swiperRef, setSwiperRef] = useState(null);
   const [slides, setSlides] = useState(
-    Array.from({ length: 4 }).map((_, index) => `Slide ${index + 1}`)
+    Array.from({ length: 4 }).map((_, index) => `Project ${index + 1}`)
   );
-  const swiper = useSwiper();
 
   const slideNext = () => {
     swiperRef.slideNext();
@@ -91,13 +84,14 @@ export default function Projects() {
     </SwiperSlide>
   ));
   const setSwiperRefHandler = () => {
-    if (!swiperRef?.activeIndex) {
-      if (swiperRef?.activeIndex === 0) {
+    if (!swiperRef?.realIndex) {
+      if (swiperRef?.realIndex === 0) {
         return setIndex(0);
       }
       return setIndex(1);
     }
-    setIndex(swiperRef.activeIndex);
+    console.log(swiperRef);
+    setIndex(swiperRef.realIndex);
   };
   return (
     <>
@@ -125,24 +119,23 @@ export default function Projects() {
           />
         </div>
 
-        <div className="Projects__Main">
-          <Swiper
-            onSlideChange={setSwiperRefHandler}
-            spaceBetween={30}
-            centeredSlides={true}
-            onSwiper={setSwiperRef}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            modules={[Autoplay, Pagination, Navigation]}
-            className="Projects__Swiper"
-            speed={500}
-            rewind={true}
-          >
-            {cards}
-          </Swiper>
-        </div>
+        <Swiper
+          onSlideChange={setSwiperRefHandler}
+          spaceBetween={30}
+          centeredSlides={true}
+          onSwiper={setSwiperRef}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="Projects__Swiper"
+          speed={500}
+          loop={true}
+        >
+          {cards}
+        </Swiper>
+
         <div className="Projects_Pagination">{pagination}</div>
       </div>
     </>
