@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProjectsCard from "./ProjectsCard";
 import { useSwiper } from "swiper/react";
+import data from "../Assets/data/ProjectsCards.json";
 
 // Import Swiper styles
 import "swiper/css";
@@ -15,37 +16,25 @@ import ArrowLeft from "../Assets/icons/projectArrow-left.svg";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
-const data = [
-  {
-    title: "Lorem Ipsum 0",
-    description: "0",
-    imagePath: "",
-    detailBackgroundColor: "rgba(110, 51, 51, 0.5)",
-  },
-  {
-    title: "Lorem Ipsum 1",
-    description: "1",
-    imagePath: "",
-    detailBackgroundColor: "rgba(56, 96, 51, 0.5)",
-  },
-  {
-    title: "Lorem Ipsum 2",
-    description: "2",
-    imagePath: "",
-    detailBackgroundColor: "rgba(89, 51, 51, 0.5)",
-  },
-  {
-    title: "Lorem Ipsum 3",
-    description: "3",
-    imagePath: "",
-    detailBackgroundColor: "rgba(44, 51, 15, 0.5)",
-  },
-];
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 export default function Projects() {
-  console.log(
-    "PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
-  );
+  const [width, setWindowWidth] = useState(0);
+  useEffect(() => {
+    updateDimensions();
+
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
+  const updateDimensions = () => {
+    console.log(window);
+    const width = window.innerWidth;
+    setWindowWidth(width);
+  };
+  const responsive = {
+    slidesNbr: width < 850 ? 1 : 3,
+  };
   const [index, setIndex] = useState(0);
 
   const [swiperRef, setSwiperRef] = useState(null);
@@ -61,6 +50,7 @@ export default function Projects() {
   };
 
   useEffect(() => {}, [index]);
+
   const pagination = slides.map((_, i) => {
     return (
       <div

@@ -3,6 +3,8 @@ import "../Styles/ActualitesCard.css";
 import Actualite from "../Assets/images/Actualite.jpeg";
 import arrow from "../Assets/icons/arrow.svg";
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 const ActualitesCard = (props) => {
   const [back, setBack] = useState("");
 
