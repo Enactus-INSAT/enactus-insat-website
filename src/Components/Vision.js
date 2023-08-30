@@ -32,7 +32,7 @@ const visionList = [
 function Vision() {
     const table = visionList.map((visionItem, index) => {
         return (
-            <div className="vision-list-item" key={index}>
+            <div className="vision-list-item" key={index} >
                 <div className="wrapper">
                     <div className="vision-icon-container">
                         <img className="vision-icon" src={visionItem.icon}/>
@@ -47,7 +47,7 @@ function Vision() {
         );
     })
     return (
-        <div className="container-vision">
+        <div className="container-vision" id={"vision"}>
             <div className="info">
                 <h1 className="titre">Our Vision</h1>
                 <div className="vision-list-container">

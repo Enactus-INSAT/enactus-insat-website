@@ -3,29 +3,37 @@ import "../Styles/Navbar.css";
 import lightLogo from "../Assets/logos/enactus-light.png";
 import darkLogo from "../Assets/logos/enactus-dark.png"
 import {IconContext} from "react-icons";
-import {BsFacebook, BsLinkedin} from "react-icons/bs"
-import {FaInstagramSquare} from "react-icons/fa";
+import {BsFacebook, BsLinkedin,BsInstagram} from "react-icons/bs"
+
 
 const menuItems = [{
-    name: "ABOUT", link: ""
+    name: "ABOUT", link: "about"
 }, {
-    name: "VISION", link: ""
+    name: "VISION", link: "vision"
 }, {
-    name: "ACTUALITIES", link: ""
+    name: "ACTUALITIES", link: "actualités"
 }, {
-    name: "PROJECTS", link: ""
+    name: "PROJECTS", link: "projects"
 }, {
-    name: "CONTACT US", link: ""
+    name: "CONTACT US", link: "contact"
 }];
 
 const socialItems = [{
-    SocialIcon: BsFacebook, link: ""
+    SocialIcon: BsFacebook, link: "https://www.facebook.com/enactusinsat"
 }, {
-    SocialIcon: FaInstagramSquare, link: ""
+    SocialIcon: BsInstagram, link: "https://www.instagram.com/enactus_insat/"
 }, {
-    SocialIcon: BsLinkedin, link: ""
+    SocialIcon: BsLinkedin, link: "https://fr.linkedin.com/company/enactus-insat?trk=public_profile_volunteering-position_profile-section-card_full-click"
 },];
+const scrollToSection = (event, sectionId) => {
+    event.preventDefault();
 
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'auto' });
+    }
+
+};
 const Navbar = ({isSticky}) => {
     //responsiveness
     const [openMenu, setOpenMenu] = useState(false);
@@ -34,14 +42,17 @@ const Navbar = ({isSticky}) => {
     const [iconHovered, setIconHovered] = useState(-1);
 
     return <nav className={isSticky ? "sticky" : "nav"}>
-        <div className="navbar-logo-container">
+        <div className="navbar-logo-container" onClick={(e) => scrollToSection(e, "home")}>
             <img className="logo" src={isSticky ? darkLogo : lightLogo} alt=""/>
         </div>
         <div className={isSticky ? "navbar-links-container-sticky" : "navbar-links-container"}>
             {
                 linkHovered === -1 ?
                     menuItems.map(({name, link}, index) => {
-                        return (<a href={link} className={isSticky ? "nav-element-sticky" : "nav-element"}
+                        return (
+                            <a
+                               onClick={(e) => scrollToSection(e, link)}
+                               className={isSticky ? "nav-element-sticky" : "nav-element"}
                                    onMouseOver={() => {
                                        setLinkHovered(index);
                                    }}
@@ -53,7 +64,9 @@ const Navbar = ({isSticky}) => {
                     }) :
                     menuItems.map(({name, link}, index) => {
                         return (linkHovered === index ?
-                                <a href={link} className={isSticky ? "nav-element-sticky" : "nav-element"}
+                                < a href={link}
+                                    onClick={(e) => scrollToSection(e, link)}
+                                    className={isSticky ? "nav-element-sticky" : "nav-element"}
                                    onMouseOver={() => {
                                        setLinkHovered(index);
                                    }}
@@ -61,6 +74,7 @@ const Navbar = ({isSticky}) => {
                                        setLinkHovered(-1);
                                    }}>{name}</a>
                                 : <a href={link}
+                                     onClick={(e) => scrollToSection(e, link)}
                                      className={isSticky ? "nav-element-sticky nav-element-sticky-hovered" : "nav-element"}
                                      onMouseOver={() => {
                                          setLinkHovered(index);

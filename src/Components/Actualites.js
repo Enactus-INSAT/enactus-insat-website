@@ -40,10 +40,10 @@ const data = [
 const Actualites = (props) => {
   return (
       <>
-        <div className="actualities-section-heading-container">
+        <div className="actualities-section-heading-container" id={"actualités"}>
           <div className="activities-section-heading">
             <div className="a-h-line"></div>
-            <div className="section-heading">ACTUALITIES</div>
+            <div className="section-heading" >ACTUALITIES</div>
             <div className="a-h-line"></div>
           </div>
         </div>

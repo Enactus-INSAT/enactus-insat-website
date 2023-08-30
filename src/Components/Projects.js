@@ -101,7 +101,7 @@ export default function Projects() {
   };
   return (
     <>
-      <div className="projects-section-heading-container">
+      <div className="projects-section-heading-container" id={"projects"}>
         <div className="activities-section-heading">
           <div className="a-h-line"></div>
           <div className="section-heading">OUR PROJECTS</div>

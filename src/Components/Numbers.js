@@ -33,7 +33,7 @@ function Numbers() {
 
     return (
         <>
-            <div className="numbers-section-heading-container">
+            <div className="numbers-section-heading-container" id={"about"}>
                 <div className="numbers-section-heading">
                     <div className="h-line"></div>
                     <div>Enactus</div>

@@ -29,9 +29,17 @@ const Home = () => {
         headerObserver.observe(header);
     }, []);
 
+    const scrollToSection = (event, sectionId) => {
+        event.preventDefault();
 
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'auto' });
+        }
+
+    };
     return (
-        <div ref={headerRef}  className="home-container">
+        <div ref={headerRef}  className="home-container" id={"home"}>
             <div className="nav-container">
                 <Navbar isSticky={isSticky}/>
             </div>
@@ -45,11 +53,13 @@ const Home = () => {
 
                     <div
                         className="buttons">
-                        <button className="fund-button">
+                        <button className="fund-button" onClick={()=>{
+                            window.location="https://www.cha9a9a.tn/association/enactus-insat-686916"
+                        }}>
                             Fund Us
                         </button>
 
-                        <button className="contact-button">
+                        <button className="contact-button" onClick={(e) => scrollToSection(e, "contact")}>
                             Contact Us
                         </button>
                     </div>

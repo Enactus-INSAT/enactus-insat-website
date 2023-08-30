@@ -8,7 +8,7 @@ function newsLetter() {
             <div className="container-out">
                 <div className="container-in">
                     <div className="containerleft">
-                        <div className="Subscribe">SUBSCRIBE TO OUR NEWSLETTER</div>
+                        <div className="Subscribe" id="contact">SUBSCRIBE TO OUR NEWSLETTER</div>
                         <div className="email">Email adress</div>
                         <div className="containerform">
                             <input type="text" placeholder="  Email*" className="form"></input>
