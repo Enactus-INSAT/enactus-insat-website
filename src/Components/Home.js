@@ -54,7 +54,7 @@ const Home = () => {
                     <div
                         className="buttons">
                         <button className="fund-button" onClick={()=>{
-                            window.location="https://www.cha9a9a.tn/association/enactus-insat-686916"
+                            window.location="https://www.cha9a9a.tn/fund/detail/phosph-act-168758"
                         }}>
                             Fund Us
                         </button>

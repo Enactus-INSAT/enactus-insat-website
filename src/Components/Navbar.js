@@ -6,6 +6,7 @@ import {IconContext} from "react-icons";
 import {BsFacebook, BsLinkedin,BsInstagram} from "react-icons/bs"
 
 
+
 const menuItems = [{
     name: "ABOUT", link: "about"
 }, {
@@ -24,7 +25,8 @@ const socialItems = [{
     SocialIcon: BsInstagram, link: "https://www.instagram.com/enactus_insat/"
 }, {
     SocialIcon: BsLinkedin, link: "https://fr.linkedin.com/company/enactus-insat?trk=public_profile_volunteering-position_profile-section-card_full-click"
-},];
+}
+,];
 const scrollToSection = (event, sectionId) => {
     event.preventDefault();
 

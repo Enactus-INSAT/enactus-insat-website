@@ -36,6 +36,9 @@ const ProjectsCard = (props) => {
             className={`ProjectsCard__DetailsBtn ProjectsCard__DonateBtn ${
               detail ? "ProjectsCard__None" : ""
             }`}
+            onClick={()=>{
+              window.location="https://www.cha9a9a.tn/fund/detail/phosph-act-168758"
+            }}
           >
             Donate{" "}
           </button>
