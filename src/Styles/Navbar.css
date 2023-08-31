@@ -17,6 +17,7 @@
     min-height: 90px;
     max-height: 100px;
     padding-left: 50px ;
+
 }
 
 .sticky{
@@ -77,11 +78,20 @@
 .navbar-menu-container {
     display: none;
 }
-.navbar-menu-container svg {
-    font-size: 1.5rem;
-    cursor: pointer;
+.flag-container{
+    display: flex;
+    align-content: center;
+    gap: 0.75rem;
+    padding-right: 6rem;
 }
 
-.social-icons{
-    size: 4em
+.flag-icon{
+    width: 1.5rem;
+    opacity: 0.7;
+}
+
+.flag-icon-hover{
+opacity: 1;
+    width: 1.5rem;
+    cursor: pointer;
 }
