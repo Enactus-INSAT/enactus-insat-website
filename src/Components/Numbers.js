@@ -8,27 +8,36 @@ import {BiWorld} from "react-icons/bi";
 const numbers = [
     {
         Icon: FaHandshake,
-        number: "4597",
-        label: "People Rised"
+        number: "300",
+        labelen:"Members of all years",
+        labelfr: "Membres de toutes les années"
+
     },
-    {
-        Icon: GoPerson,
-        number: "8945",
-        label: "Volunteer"
-    },
+
     {
         Icon: BsTwitter,
-        number: "10M",
-        label: "Poor People Saved"
+        number: "380K",
+        labelen:"Number of people impacted",
+        labelfr: "Nombres de personnes impactées "
     },
     {
         Icon: BiWorld,
-        number: "100",
-        label: "Country Member"
-    }
+        number: "10",
+        labelen: "Competitions won",
+        labelfr: "Compétitions gagnées "
+    },
+    {
+        Icon: GoPerson,
+        number: "5",
+        labelen:"Projects",
+        labelfr: "Projets"
+    },
+
+
 ]
 
-function Numbers() {
+
+function Numbers(props) {
     const [hovered, setHovered] = useState(-1);
 
     return (
@@ -39,12 +48,12 @@ function Numbers() {
                     <div>Enactus</div>
                     <div className="h-line"></div>
                 </div>
-                <div className="section-heading">EN CHIFFRES</div>
+                <div className="section-heading"> {props.language==="fr" ? "EN CHIFFRES" :"IN NUMBERS" }</div>
             </div>
 
             <div className="container1">
                 {
-                    numbers.map(({Icon, number,label}, index) => {
+                    numbers.map(({Icon, number,labelfr,labelen}, index) => {
                         return(
                             <div className="cards"
                                  onMouseOver={()=>{
@@ -57,7 +66,7 @@ function Numbers() {
                                 <div className="icon"><Icon size={50} color='#F9CD7A'/>
                                 </div>
                                 <div className={hovered == index ? "number-title-hovered" : "number-title" }>{number}+</div>
-                                <div className="title2">{label}</div>
+                                <div className="title2">{props.language==="fr" ? labelfr : labelen}</div>
                             </div>
                         );
                     })

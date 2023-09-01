@@ -10,7 +10,7 @@ import enFlag from "../Assets/icons/fr.svg"
 
 
 
-const menuItems = [{
+const menuItemsEn = [{
     name: "ABOUT", link: "about"
 }, {
     name: "VISION", link: "vision"
@@ -20,6 +20,17 @@ const menuItems = [{
     name: "PROJECTS", link: "projects"
 }, {
     name: "CONTACT US", link: "contact"
+}];
+const menuItemsFr= [{
+    name: "À PROPOS", link: "about"
+}, {
+    name: "VISION", link: "vision"
+}, {
+    name: "ACTUALITES", link: "actualités"
+}, {
+    name: "PROJETS", link: "projects"
+}, {
+    name: "NOUS CONTACTER", link: "contact"
 }];
 
 const socialItems = [{
@@ -40,15 +51,21 @@ const scrollToSection = (event, sectionId) => {
     }
 
 };
-const Navbar = ({isSticky}) => {
+const Navbar = (props) => {
+    var menuItems=""
+    {props.language==="fr" ? menuItems=menuItemsFr :menuItems=menuItemsEn }
+
+    var isSticky=props.isSticky;
     //responsiveness
-    const [openMenu, setOpenMenu] = useState(false);
+
 
     const [linkHovered, setLinkHovered] = useState(-1);
     const [iconHovered, setIconHovered] = useState(-1);
     const [flagClassfr,setFlagClassfr]=useState("flag-icon");
     const [flagClassen,setFlagClassen]=useState("flag-icon");
-    const [language,setLanguage]=useState("fr")
+
+
+
 
 
     return <nav className={isSticky ? "sticky" : "nav"}>
@@ -60,14 +77,17 @@ const Navbar = ({isSticky}) => {
             <div onMouseOver={()=>{setFlagClassfr("flag-icon-hover")}} onMouseOut={() => {
                 setFlagClassfr("flag-icon")
             }} onClick={()=>{
-                setLanguage("fr")
+                props.setLanguage("fr")
+
             }}
             >
                 <img src={frFlag} alt="" className={flagClassfr}/>
             </div>
             <div onMouseOver={()=>{setFlagClassen("flag-icon-hover")}} onMouseOut={() => {
                 setFlagClassen("flag-icon")
-            }} onClick={()=>{setLanguage("en")}}>
+            }} onClick={()=>{props.setLanguage("en")
+
+            }}>
                 <img src={enFlag} alt="" className={flagClassen}/>
             </div>
         </div> }

@@ -1,6 +1,7 @@
 .container-vision {
     margin: 7%;
     display: flex;
+    gap: 5rem;
     height: fit-content;
     padding: 2% 5% ;
 }

@@ -3,7 +3,8 @@ import Navbar from "./Navbar";
 import "../Styles/Home.css"
 import bgHome from "../Assets/images/bg-home.jpg"
 
-const Home = () => {
+const Home = (props) => {
+
 
     const headerRef = useRef();
     const [isSticky, setIsSticky] = useState(false);
@@ -38,10 +39,12 @@ const Home = () => {
         }
 
     };
+    const language=props.language
+
     return (
         <div ref={headerRef}  className="home-container" id={"home"}>
             <div className="nav-container">
-                <Navbar isSticky={isSticky}/>
+                <Navbar isSticky={isSticky} language={language} setLanguage={props.setLanguage}/>
             </div>
 
             <div className="home-banner-container">
@@ -49,18 +52,25 @@ const Home = () => {
                 <div className="home-text-section">
                     <h1 className="primary-heading">ENACTUS INSAT</h1>
                     <p className="primary-text">
-                        {"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "}                </p>
+                        {language==="fr" ? "Enactus INSAT est une équipe faisant partie de “l’ONG” Enactus Tunisie.\n" +
+                            "Fondée en 2018, Enactus INSAT permet aux jeunes étudiants de participer à la vie entrepreneuriale en créant  des projets à impact social, économique et environnemental qui évolueront en entreprises indépendantes. "
+                             : "Enactus INSAT team is part of ENACTUS Tunisia that is an (affiliated with ENACTUS, a global) NGO. Founded in 2018, Enactus Insat allows young undergraduates to be part of the entrepreneurial world by creating projects with a social, economical and environmental impact which will bloom into independent and flourishing enterprises."}
+                    </p>
 
                     <div
                         className="buttons">
                         <button className="fund-button" onClick={()=>{
                             window.location="https://www.cha9a9a.tn/fund/detail/phosph-act-168758"
                         }}>
-                            Fund Us
+
+                            {language==="fr" ? "financez-nous" : "Fund Us"}
+
                         </button>
 
                         <button className="contact-button" onClick={(e) => scrollToSection(e, "contact")}>
-                            Contact Us
+                            {language==="fr" ? "Nous Contacter" : "Contact Us"}
+
+
                         </button>
                     </div>
 
