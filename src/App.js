@@ -7,18 +7,19 @@ import Newsletter from "./Components/NewsLetter";
 import Projects from "./Components/Projects";
 import Activity from "./Components/Activity";
 import Actualites from "./Components/Actualites";
-
-function App() {
+import { useState} from "react";
+function App(props) {
+    const [language,setLanguage]=useState("fr")
     return (
         <div>
-            <Home/>
-            <Numbers/>
-            <Vision/>
-            <Activity/>
-            <Projects/>
-            <Actualites/>
-            <Newsletter/>
-            <Footer/>
+            <Home language={language} setLanguage={setLanguage}/>
+            <Numbers language={language}/>
+            <Vision language={language}/>
+            <Activity language={language}/>
+            <Projects language={language}/>
+            <Actualites language={language}/>
+            <Newsletter language={language}/>
+            <Footer language={language}/>
         </div>
     );
 }
