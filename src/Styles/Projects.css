@@ -49,6 +49,7 @@
   height: 4vh;
   width: 4vh;
 }
+
 .Projects__BtnRight {
   right: 2.5rem;
 }
@@ -105,6 +106,9 @@
 }
 
 .Projects_Pagination {
+  margin-top: 7vh
+;
+
   display: flex;
   gap: 0.4rem;
 }

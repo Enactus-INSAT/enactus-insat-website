@@ -1,7 +1,8 @@
 .ProjectsCard__Wrapper {
   width: 85vw;
-  height: 55vh;
+  height: 65vh;
   position: relative;
+
 }
 .ProjectsCard__Overlay {
   position: absolute;
@@ -11,9 +12,29 @@
 .ProjectsCard__Main {
   position: relative;
   width: 85vw;
-  height: 55vh;
+  height: 65vh;
   border-radius: 1.5rem;
+
+
 }
+.ProjectsCard__Title{
+  position: relative;
+  z-index: 3;
+  display: flex;
+justify-content: center;
+  align-items: center;
+  gap: 30%;
+  width: 100%;
+  height: 30%;
+  font-size: 50px;
+  color: white;
+font-family: 'FS Meridian';
+  animation: fadeEntrance 1s ease 0s 1 normal forwards;
+
+}
+
+
+
 .ProjectsCard__DetailsBtn--Container {
   position: relative;
   z-index: 3;
@@ -21,8 +42,9 @@
   justify-content: flex-end;
   width: 100%;
   /* background-color: #ff0d0d; */
-  top: 45vh;
+ top: 75%;
 }
+
 
 .ProjectsCard__DetailsBtn {
   min-width: 11vw;
@@ -43,29 +65,46 @@
   border: #993333 solid 1px;
   margin-right: 2vh;
 }
+.Projects__TitleDetail{
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  z-index: 4;
+  font-size: 40px;
+  color: white;
+  font-family: 'FS Meridian';
+text-align: left;
+  padding-left: 5%;
+  animation: fadeEntrance 1s ease 0s 1 normal forwards;
+}
 .ProjectsCard__DetailsCard {
   position: absolute;
-  width: 85vw;
-  height: 30vh;
+  width: 100%;
+  height: 60%;
   border-radius: 1.5rem;
   background-color: rgba(17, 53, 153, 0.26);
   opacity: 0.26;
 
   bottom: 0px;
   z-index: 4;
+
 }
+
 .ProjectsCard__Detail {
   animation: fadeEntrance 1s ease 0s 1 normal forwards;
 }
 
 .ProjectsCard__DetailsCard > p {
+
   margin: 2rem 3rem;
   font-family: "FS Meridian";
-  color: #ff0d0d;
-  font-size: 4rem;
-  letter-spacing: 1cap;
+  color: #FFFFFF;
+  font-size: 1rem;
+  letter-spacing: 2cap;
   animation: fadeEntrance 1s ease 0s 1 normal forwards;
+  text-align: left;
 }
+
 
 .ProjectsCard__DetailsClose {
   position: absolute;

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "../Styles/ProjectsCard.css";
-import Actualite from "../Assets/images/Actualite.jpeg";
+
 import Overlay from "../Assets/images/projectsOverlay.svg";
 import exitIcon from "../Assets/icons/exit.svg";
+
 
 const ProjectsCard = (props) => {
   const [detail, setDetail] = useState("");
@@ -16,8 +17,14 @@ const ProjectsCard = (props) => {
     return "";
   };
   useEffect(() => {}, [detail]);
+
+
+
   const sectionStyle = {
-    backgroundImage: `url(${Actualite})`,
+
+
+
+    backgroundImage: `url(${props.data.imagePath})`,
 
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -29,9 +36,23 @@ const ProjectsCard = (props) => {
   };
   return (
     <div className="ProjectsCard__Wrapper">
+
+
       <img src={Overlay} className="ProjectsCard__Overlay" alt=""></img>
+      <img src={props.data.rectangle} className="ProjectsCard__Overlay" alt=""></img>
+
+
       <div className="ProjectsCard__Main" style={sectionStyle}>
+        {detail ?<>  <div className="Projects__TitleDetail">{props.data.title}</div>  </>:null}
+
+
         <div className="ProjectsCard__DetailsBtn--Container">
+
+          <div className={`ProjectsCard__Title ${
+              detail ? "ProjectsCard__None" : ""
+            }` }>
+            {props.data.title}
+             <div>
           <button
             className={`ProjectsCard__DetailsBtn ProjectsCard__DonateBtn ${
               detail ? "ProjectsCard__None" : ""
@@ -50,6 +71,8 @@ const ProjectsCard = (props) => {
           >
             View Details
           </button>
+             </div>
+          </div>
         </div>
         <div
           className={`ProjectsCard__DetailsCard  ${
@@ -57,7 +80,14 @@ const ProjectsCard = (props) => {
           }  ${!props.isActive && detail ? hideHandler() : ""}`}
           style={DetailStyle}
         >
-          <p>{data.description}</p>
+
+
+          <p className="Description">{data.description.split('\n').map((paragraph, index) => (
+              <span key={index}>
+          {paragraph}
+                <br />
+        </span>
+          ))}</p>
           <img
             src={exitIcon}
             className="ProjectsCard__DetailsClose"
