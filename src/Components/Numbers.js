@@ -64,7 +64,7 @@ function Numbers(props) {
                                      setHovered(-1);
                                  }}
                             >
-                                <div className="icon"><Icon  size={window.innerWidth<500 ? 30:50} color='#F9CD7A'/>
+                                <div className="icon"><Icon  size={document.documentElement.clientWidth<500 ? 30:50} color='#F9CD7A'/>
                                 </div>
                                 <div className={hovered == index ? "number-title-hovered" : "number-title" }>{number}+</div>
                                 <div className="title2">{props.language==="fr" ? labelfr : labelen}</div>

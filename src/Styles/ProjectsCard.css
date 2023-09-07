@@ -189,6 +189,6 @@ text-align: left;
   }
   .ProjectsCard__DonateBtn{width: 14vh }
     .ProjectsCard__DetailsBtn{width: 14vh;margin-right:2vh}
-
+.ProjectsCard__DetailsCard{overflow: auto}
 
 }

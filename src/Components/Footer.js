@@ -18,7 +18,7 @@ export default function Footer() {
                 <div className="footer-logo-container">
                     <img className='logo-enactus' src={logoEnactus} width="100%"></img>
                 </div>
-                {window.innerWidth>500 ?  <div className='contact'>
+                {document.documentElement.clientWidth>500 ?  <div className='contact'>
 
                     <div className='title'>
                         CONTACT
