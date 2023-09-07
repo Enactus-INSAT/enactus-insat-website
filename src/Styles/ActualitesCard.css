@@ -42,7 +42,8 @@
 }
 .ActualiteCard__P {
   margin: 0 0.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
+
   text-align: center;
 
   transition: all 300ms linear;
@@ -67,7 +68,7 @@
   font-size: 1.2rem;
 }
 .ActualiteCard__P--side {
-  margin: 0 0.5rem;
+  margin: 0 0rem;
   font-size: 0.6rem;
 }
 .ActualiteCard__Arrow--side {
@@ -83,7 +84,7 @@
   border-radius: 0 0 30% 0;
 }
 .ActualiteCard__Img--center {
-  height: 40%;
+  height: 50%;
   width: 100%;
   border-radius: 0 0 30% 30%;
   margin: 0;
@@ -219,7 +220,7 @@
     font-size: 1rem;
   }
   .ActualiteCard__P--side {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
   }
 }
 

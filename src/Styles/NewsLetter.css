@@ -123,3 +123,10 @@
 .bouton:hover {
     background-color: #c4a262;;
 }
+@media screen and (max-width: 500px) {
+    .container-out{height: 45vw}
+    .container-in{width: 90%;height: 60vw}
+    .Subscribe{font-size: 15px}
+    .privacy{display: none}
+
+}

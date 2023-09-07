@@ -97,7 +97,7 @@ const Navbar = (props) => {
                 linkHovered === -1 ?
                     menuItems.map(({name, link}, index) => {
                         return (
-                            <a
+                            <a  href={link}
                                onClick={(e) => scrollToSection(e, link)}
                                className={isSticky ? "nav-element-sticky" : "nav-element"}
                                    onMouseOver={() => {
@@ -112,7 +112,7 @@ const Navbar = (props) => {
                     }) :
                     menuItems.map(({name, link}, index) => {
                         return (linkHovered === index ?
-                                < a href={link}
+                                < a
                                     onClick={(e) => scrollToSection(e, link)}
                                     className={isSticky ? "nav-element-sticky" : "nav-element"}
                                    onMouseOver={() => {
@@ -158,7 +158,7 @@ const Navbar = (props) => {
                             <IconContext.Provider value={{
                                 className: 'social-icons', size: '1.5em', color: 'white'
                             }}>
-                                <a className="logo-element" href=""
+                                <a className="logo-element" href={link}
                                    onMouseOver={() => {
                                        setIconHovered(index);
                                    }}
@@ -178,6 +178,7 @@ const Navbar = (props) => {
                             }}>
                                 <a className={iconHovered === index ? "logo-element" : "logo-element-hovered"}
                                    href={link}
+                                   target={"_blank"}
                                    onMouseOver={() => {
                                        setIconHovered(index);
 
@@ -194,6 +195,7 @@ const Navbar = (props) => {
                             }}>
                                 <a className={iconHovered === index ? "logo-element" : "logo-element-hovered"}
                                    href={link}
+                                   target={"_blank"}
                                    onMouseOver={() => {
                                        setIconHovered(index);
 

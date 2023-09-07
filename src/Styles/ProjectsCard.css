@@ -172,5 +172,23 @@ text-align: left;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
+  .ProjectsCard__Main{
+    width: 100vw;
+    height: 80vh;
+  }
+  .ProjectsCard__Wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+  .ProjectsCard__DetailsBtn--Container{
+    top: 50vh;
+  }
+  .ProjectsCard__Title{
+    flex-direction: column;
+  }
+  .ProjectsCard__DonateBtn{width: 14vh }
+    .ProjectsCard__DetailsBtn{width: 14vh;margin-right:2vh}
+
+
 }

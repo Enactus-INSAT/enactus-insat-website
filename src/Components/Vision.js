@@ -4,6 +4,7 @@ import pc from '../Assets/images/vision-asset.png'
 import integrityIcon from '../Assets/logos/integrity-logo.svg'
 import trustIcon from '../Assets/logos/trust-logo.svg'
 import excellenceIcon from '../Assets/logos/excellence-logo.svg'
+import Origami from "../Assets/logos/origami2.svg"
 
 const visionList = [
     {
@@ -56,7 +57,7 @@ function Vision(props) {
         );
     })
     return (
-        <div className="container-vision" id={"vision"}>
+        <div className="container-vision" id={"vision"} >
             <div className="info">
                 <h1 className="titre">{props.language==="fr" ? "NOTRE VISION" :"OUR VISION" }</h1>
                 <div className="vision-list-container">

@@ -34,6 +34,8 @@ const ProjectsCard = (props) => {
   const DetailStyle = {
     backgroundColor: data.detailBackgroundColor,
   };
+  let description=""
+  props.language==="fr" ? description=props.data.descriptionfr : description=props.data.descriptionen
   return (
     <div className="ProjectsCard__Wrapper">
 
@@ -52,7 +54,7 @@ const ProjectsCard = (props) => {
               detail ? "ProjectsCard__None" : ""
             }` }>
             {props.data.title}
-             <div>
+             <div className={"Btns_div"}>
           <button
             className={`ProjectsCard__DetailsBtn ProjectsCard__DonateBtn ${
               detail ? "ProjectsCard__None" : ""
@@ -82,7 +84,7 @@ const ProjectsCard = (props) => {
         >
 
 
-          <p className="Description">{data.description.split('\n').map((paragraph, index) => (
+          <p className="Description">{description.split('\n').map((paragraph, index) => (
               <span key={index}>
           {paragraph}
                 <br />
