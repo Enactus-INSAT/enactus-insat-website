@@ -1,3 +1,14 @@
+
+@media only screen and (min-width: 500px) and (max-width:992px ) {
+
+
+}
+@media only screen and (min-width: 992px) {
+
+
+}
+
+
 .logo {
     max-width: 30%;
     height: auto;
@@ -10,8 +21,10 @@
 .navbar-logo-container :hover{
     cursor: pointer;
 }
+.nav-element:hover {cursor: pointer}
 .nav{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     min-height: 90px;
@@ -94,4 +107,63 @@
 opacity: 1;
     width: 1.5rem;
     cursor: pointer;
+}
+@media only screen and (max-width: 500px){
+    .navbar-logo-container{
+        display: inline;
+        width: 20%;
+
+    }
+    .logo{
+        width: 100%;
+        max-width: none;
+    }
+    .nav{
+        padding-left: 5%;
+    }
+    .navbar-links-container{
+        order: 4;
+    }
+    .navbar-logos-container{
+        order: 3;
+        margin-left:4rem;
+        margin-right: 1rem;
+    }
+  .flag-container{
+      padding-right: 0;
+  }
+  .flag-icon{
+      width: 1rem
+  ;
+  }
+    .flag-icon-hover{
+        width: 1rem
+    ;
+    }
+    .social-icons{
+        width: 1rem
+    }
+    .logo-element{
+        margin-right: 1rem;
+    }
+   .nav-element{
+       margin-right: 1rem;
+       font-size: 9px;
+   }
+    .navbar-links-container{
+        margin-right: auto;
+        margin-left:auto ;
+
+    }
+    .primary-text {
+
+        font-size: 9px;
+        line-height: 23px;
+        text-align: center;
+        margin: 8% 10% 3vw;
+    }
+
+   .sticky{
+       display: none;
+   }
 }

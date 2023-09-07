@@ -1,11 +1,13 @@
 
 .bg-img {
     width: 100%;
-    height: auto;
+    height: 100%;
     position: absolute;
     left: 0px;
     top: 0px;
     z-index: -1;
+    object-fit: cover;
+
 }
 
 .home-container {
@@ -88,4 +90,32 @@
 .buttons {
     display: flex;
     align-content: space-between;
+}
+@media screen and (max-width: 500px) {
+    .primary-heading{
+        font-size: clamp(2rem, 6vw, 7rem);
+        margin-top: 10%;
+    }
+    .primary-text {
+        font-size: 13px;
+        line-height: 22px;
+        text-align: center;
+        margin: 15% 10% 3vw;
+    }
+    .fund-button{
+        padding: 0.4rem 0.6rem;
+        font-size: 0.6rem;
+        width: 100px;
+        height: 40px;
+    }
+    .contact-button{
+        padding: 0.4rem 0.6rem;
+        font-size: 0.6rem;
+        width: 100px;
+        height: 40px;
+
+    }
+    .buttons{margin-top: 10%}
+
+
 }

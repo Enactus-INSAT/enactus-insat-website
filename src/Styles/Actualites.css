@@ -83,10 +83,14 @@
     height: 18rem;
   }
   .Actualities__RightBack {
-    translate: -1.2rem 14.3rem;
+    translate: -1.2rem 4.3rem;
   }
   .Actualities__LeftBack {
-    translate: 1.2rem 11.9rem;
+    translate: 1.2rem 2rem;
   }
+  .Actualites_Wrap{height: 45vh; min-height:unset}
+  .Actualites_SliderContainer{margin-top: 0}
+  .swiper-slide{height: 60%}
+  .Slider_Pagination{bottom:15rem}
 }
 

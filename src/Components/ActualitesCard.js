@@ -5,8 +5,11 @@ import arrow from "../Assets/icons/arrow.svg";
 
 const ActualitesCard = (props) => {
   const [back, setBack] = useState("");
+  let title =""
+ {props.language ==="fr" ? title=props.data.titlefr:title=props.data.titleen }
+let description =""
+  {props.language ==="fr" ? description=props.data.descriptionfr:description=props.data.descriptionen }
 
-  const { title, description } = props.data;
   const showHandler = () => {
     setBack("back");
   };
@@ -44,7 +47,7 @@ const ActualitesCard = (props) => {
             {title}
           </h3>
           <p className={`ActualiteCard__P ActualiteCard__P--${props.type} `}>
-            {description}
+            {props.data.date}
           </p>
           <img
             src={arrow}
@@ -78,8 +81,14 @@ const ActualitesCard = (props) => {
           >
             {title}
           </h3>
+          <br/><br/>
           <p className={`ActualiteCard__P ActualiteCard__P--${props.type} `}>
-            {description}
+            {description.split('\n').map((paragraph, index) => (
+                <span key={index}>
+          {paragraph}
+                  <br />
+        </span>
+            ))}
           </p>
           <img
             src={arrow}

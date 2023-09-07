@@ -40,7 +40,12 @@
 
 }
 
-.activities {
+.activities1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: 0  12rem;
+}.activities2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
@@ -60,4 +65,32 @@
     font-weight: 600;
     font-size: 35px;
     color: #993333;
+}
+@media screen and (max-width: 500px) {
+    .activities1{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: 0  ;
+        gap: 0;
+    }.activities2{
+         display: grid;
+         grid-template-columns: 1fr 2fr;
+         margin: 0  ;
+             gap: 0;
+     }
+     .activity-title{
+         font-size: 25px;
+         margin-bottom: 0;
+     }
+     .activities1 ,.activities2 p{
+         font-size: 15px;
+     }
+    .activity-picture {
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+        height: 65%;
+        margin-top: 8.5vh;
+    }
+
 }

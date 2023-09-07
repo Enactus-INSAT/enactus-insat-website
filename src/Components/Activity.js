@@ -41,12 +41,13 @@ const Activity = (props) => {
                 <div className="a-h-line"></div>
             </div>
         </div>
-        <div className="activities">
+
             {
                 activities.map(({titleen,titlefr,descriptionen, descriptionfr, picture}, index) => {
                     if (index % 2)
                         return (
                             <>
+                            <div className="activities1">
                                 <div className="activity">
                                     <div className="rectangle-activity"></div>
                                     <h3 className="activity-title">
@@ -55,20 +56,23 @@ const Activity = (props) => {
                                     <p>{props.language==="fr" ? descriptionfr :descriptionen }</p>
                                 </div>
                                 <img className="activity-picture" src={picture} alt=""/>
-
+                            </div>
                             </>)
                     else return (
                         <>
+                        <div className="activities2">
                             <img className="activity-picture" src={picture} alt=""/>
                             <div className="activity">
                                 <div className="rectangle-activity"></div>
                                 <h3 className="activity-title">{props.language==="fr" ? titlefr :titleen }</h3>
+                                {window.innerWidth<500 && titleen==="Trainings" ? <br/> : null}
                                 <p>{props.language==="fr" ? descriptionfr :descriptionen }</p>
                             </div>
+                        </div>
                         </>)
                 })
             }
-        </div>
+
     </>
 }
 export default Activity;
