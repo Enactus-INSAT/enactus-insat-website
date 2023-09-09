@@ -31,7 +31,8 @@ const data = [
   {date:"7/12/2022\n12/12/2022",
     titlefr: "Concours",
     descriptionfr:
-        "12 décembre 2022 : PHOSPH’ACT a remporté le premier prix à MOOVEJTN organisé par l'Institut français de Tunisie\n\n" +
+        "12 décembre 2022 : PHOSPH’ACT a remporté le premier prix à MOOVEJTN organisé par l'Institut français de Tunisie\n\nm start" +
+        "" +
         "7 décembre 2022 : Phosph’Act a remporté le premier prix à la compétition de pitch SDGS organisée par Expertise France et Innov’i.\n",
     titleen: "Competitions",
     descriptionen:
@@ -47,7 +48,7 @@ const Actualites = (props) => {
         <div className="actualities-section-heading-container" id={"actualités"}>
           <div className="activities-section-heading">
             <div className="a-h-line"></div>
-            <div className="section-heading" >ACTUALITIES</div>
+            <div className="section-heading" >{props.language==="fr" ? "ACTUALITES" : "ACTUALITIES"}</div>
             <div className="a-h-line"></div>
           </div>
         </div>

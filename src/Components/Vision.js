@@ -38,6 +38,12 @@ const visionList = [
         "paragraphen": "We build a challenging, collaborative and engaging team . We work as one entity."
     }
 ]
+const color={
+    color:"#993333"
+}
+const bgcolor={
+    backgroundColor:"#993333"
+}
 
 function Vision(props) {
     const table = visionList.map((visionItem, index) => {
@@ -57,9 +63,19 @@ function Vision(props) {
         );
     })
     return (
+        <>
+            <div className="projects-section-heading-container" id={"vision"}>
+                <div className="activities-section-heading">
+                    <div className="a-h-line" style={bgcolor}></div>
+                    <div className="section-heading" style={color}>{props.language==="fr" ? "NOTRE VISION" :"OUR VISION" }</div>
+                    <div className="a-h-line" style={bgcolor}></div>
+                </div>
+            </div>
+
         <div className="container-vision" id={"vision"} >
+
             <div className="info">
-                <h1 className="titre">{props.language==="fr" ? "NOTRE VISION" :"OUR VISION" }</h1>
+
                 <div className="vision-list-container">
                     {table}
                 </div>
@@ -68,6 +84,7 @@ function Vision(props) {
                 <img className="vision-image" src={pc}></img>
             </div>
         </div>
+        </>
     );
 }
 

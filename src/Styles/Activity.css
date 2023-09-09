@@ -7,6 +7,7 @@
     width: 80%;
     gap: 0%;
     text-align: center;
+
 }
 
 .a-h-line {
@@ -23,6 +24,7 @@
     font-weight: 700;
     font-size: 60px;
     margin: 0;
+
 }
 
 .activities-section-heading-container {
@@ -34,63 +36,49 @@
     width: 100%;
 }
 
-.activity-picture{
-    width: 100%;
-    border-radius: 8px;
+.activity-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
 
-}
+    height: 55vh;
+    width: 70vw;
+    border-radius:40px;
 
-.activities1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    margin: 0  12rem;
-}.activities2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    margin: 0  12rem;
-}
+    margin: auto;
+    margin-bottom: 7vh;
+    background-size:auto ;
 
-.activity{
-    align-self: center;
-    justify-self: center;
-    width: 90%;
-}
-.rectangle-activity{
-    border: 2px solid #993333;
-    width: 58.79px;
 }
 .activity-title{
-    font-weight: 600;
-    font-size: 35px;
-    color: #993333;
+    color: #FFFFFF;
+    margin: 0 3vw;
+   font-family: "FS Meridian";
+    font-size: 40px;
+}
+.activity-text{
+    margin: 3vh 3vw;
+    color: #FFFFFF;
+    font-weight: lighter;
+    font-size: 25px;
+}
+.activity-more{
+    font-size: 15px;
+    margin-left: 1vw;
+}
+.activity-more:hover{
+    cursor: pointer;
 }
 @media screen and (max-width: 500px) {
-    .activities1{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        margin: 0  ;
-        gap: 0;
-    }.activities2{
-         display: grid;
-         grid-template-columns: 1fr 2fr;
-         margin: 0  ;
-             gap: 0;
-     }
-     .activity-title{
-         font-size: 25px;
-         margin-bottom: 0;
-     }
-     .activities1 ,.activities2 p{
-         font-size: 15px;
-     }
-    .activity-picture {
-        width: 100%;
-        border-radius: 8px;
-        object-fit: cover;
-        height: 65%;
-        margin-top: 8.5vh;
+    .activity-title{
+        font-size: 25px;
+    }
+    .activity-text{
+        font-size: 15px;
+    }
+    .activity-more{
+        font-size: 12px;
     }
 
 }

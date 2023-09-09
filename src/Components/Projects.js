@@ -144,13 +144,19 @@ export default function Projects(props) {
     }
     setIndex(swiperRef.activeIndex);
   };
+  const color={
+    color:"#4D4D4D"
+  }
+  const bgcolor={
+    backgroundColor:"#4D4D4D"
+  }
   return (
     <>
       <div className="projects-section-heading-container" id={"projects"}>
         <div className="activities-section-heading">
-          <div className="a-h-line"></div>
-          <div className="section-heading">OUR PROJECTS</div>
-          <div className="a-h-line"></div>
+          <div className="a-h-line" style={bgcolor}></div>
+          <div className="section-heading" style={color}>{props.language==="fr" ? "NOS PROJETS" : "OUR PROJECTS"}</div>
+          <div className="a-h-line" style={bgcolor}></div>
         </div>
       </div>
       <div className="Projects__Wrapper">

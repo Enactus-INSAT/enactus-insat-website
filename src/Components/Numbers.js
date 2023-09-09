@@ -35,8 +35,14 @@ const numbers = [
 
 
 ]
+const color={
+    color:"#F8C159"
+}
+const bgColor={
+    backgroundColor:"#F8C159",
 
-
+}
+const linewidt={width:"70%"}
 function Numbers(props) {
     const [hovered, setHovered] = useState(-1);
 
@@ -44,12 +50,12 @@ function Numbers(props) {
     return (
         <>
             <div className="numbers-section-heading-container" id={"about"}>
-                <div className="numbers-section-heading">
-                    <div className="h-line"></div>
-                    <div>Enactus</div>
-                    <div className="h-line"></div>
+                <div className="numbers-section-heading" style={linewidt} >
+                    <div className="h-line" style={bgColor} ></div>
+                    <div style={color}>Enactus</div>
+                    <div className="h-line" style={bgColor} ></div>
                 </div>
-                <div className="section-heading"> {props.language==="fr" ? "EN CHIFFRES" :"IN NUMBERS" }</div>
+                <div className="section-heading" style={color}> {props.language==="fr" ? "EN CHIFFRES" :"IN NUMBERS" }</div>
             </div>
 
             <div className="container1">
