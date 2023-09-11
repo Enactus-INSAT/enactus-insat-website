@@ -95,6 +95,7 @@ input[type="text"], input[type="password"] {
     position:absolute;
     width: 20vw;
     top: -20vh;
+    z-index: -100;
 }
 .join-remember{
     display: flex;
@@ -121,23 +122,24 @@ input[type="text"], input[type="password"] {
 .Origami2{
     position:absolute;
     top: 40%;
-    right: 0%;
+    right: 0%;z-index: -100;
 }
 .Origami3{
     position: absolute;
     bottom: -10%;
     left: 0%;
-    height: 70vh;
+    height: 70vh;z-index: -100;
 }
 .Blush1{
     position: absolute;
     top:0%;
-    right: 0%;
+    right: 0%;z-index: -100;
 
 }
 .Blush2{position: absolute;
     top:40%;
-    left: 0%;
+    left: 0%
+;z-index: -100;
 
 }
 
@@ -166,5 +168,12 @@ input[type="text"], input[type="password"] {
     }
     .form-container{
         padding-bottom: 10vh;
+    }
+    .Blush1{
+        display: none;
+    }
+    .Blush2{
+        display: none;
+
     }
 }
