@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/enactus-insat-website/static/css/main.1cf55756.css",
+    "main.css": "/enactus-insat-website/static/css/main.11e540f3.css",
     "main.js": "/enactus-insat-website/static/js/main.8443144c.js",
     "static/media/phosphact.png": "/enactus-insat-website/static/media/phosphact.39e935c7d3a6a7e33921.png",
     "static/media/Rectangle.svg": "/enactus-insat-website/static/media/Rectangle.6b5a469da3b9f2fe232718f3951fd880.svg",
@@ -49,11 +49,11 @@
     "static/media/projectArrow-right.svg": "/enactus-insat-website/static/media/projectArrow-right.f059f13385ed89f2b636b58b4207f070.svg",
     "static/media/projectArrow-left.svg": "/enactus-insat-website/static/media/projectArrow-left.97b4c8a9e7cf1f177883b301e39a784f.svg",
     "static/media/projectsOverlay.svg": "/enactus-insat-website/static/media/projectsOverlay.2b74f149c2569a1360747bb4bd4606d7.svg",
-    "main.1cf55756.css.map": "/enactus-insat-website/static/css/main.1cf55756.css.map",
+    "main.11e540f3.css.map": "/enactus-insat-website/static/css/main.11e540f3.css.map",
     "main.8443144c.js.map": "/enactus-insat-website/static/js/main.8443144c.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cf55756.css",
+    "static/css/main.11e540f3.css",
     "static/js/main.8443144c.js"
   ]
 }
