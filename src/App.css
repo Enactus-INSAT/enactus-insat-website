@@ -26,6 +26,9 @@ body{
     background-color: #FFAD11;
 }
 .bouton-recru:hover{
+    border: none;
+}
+.bouton-recru:hover{
     background-color: #a16d0c;
 }
 @media screen and (max-width: 500px){
