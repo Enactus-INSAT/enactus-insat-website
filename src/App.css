@@ -4,3 +4,36 @@ h1{
 body{
     font-family: "SF UI Text Regular";
 }
+.div-recru{width: 100vw;
+    height: 100vh;
+    position: relative;
+
+}
+.image-recru{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+}
+.bouton-recru{
+    position: absolute;
+    bottom: 10%;
+    right: 41vw;
+    left: 41vw;
+    width: 18vw;
+    height: 7vh;
+    background-color: #FFAD11;
+}
+.bouton-recru:hover{
+    background-color: #a16d0c;
+}
+@media screen and (max-width: 500px){
+    .bouton-recru{
+        right: 27vw;
+        left: 27vw;
+        width: 46vw;
+
+    }
+
+}
