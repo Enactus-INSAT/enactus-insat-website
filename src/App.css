@@ -23,7 +23,8 @@ body{
     left: 41vw;
     width: 18vw;
     height: 7vh;
-    background-color: #FFAD11;
+    background-color: #F8C159;
+    border: none;
 }
 .bouton-recru:hover{
     border: none;
