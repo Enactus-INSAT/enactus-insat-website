@@ -13,7 +13,7 @@ import enFlag from "../Assets/icons/fr.svg"
 const menuItemsEn = [{
     name: "ABOUT", link: "about"
 }, {
-    name: "VISION", link: "vision"
+    name: "JOIN US", link: "vision"
 }, {
     name: "ACTUALITIES", link: "actualités"
 }, {
@@ -24,7 +24,7 @@ const menuItemsEn = [{
 const menuItemsFr= [{
     name: "À PROPOS", link: "about"
 }, {
-    name: "VISION", link: "vision"
+    name: "JOIN US", link: "vision"
 }, {
     name: "ACTUALITES", link: "actualités"
 }, {
