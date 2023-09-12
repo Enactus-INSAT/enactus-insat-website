@@ -88,7 +88,6 @@ const data = [
 
 export default function Projects(props) {
   const clientWindowWidth = document.documentElement.clientWidth;
-  console.log(clientWindowWidth);
   let slidesNbr = 3;
   if (clientWindowWidth < 1) {
     slidesNbr = 1;

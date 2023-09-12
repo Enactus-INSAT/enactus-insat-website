@@ -18,9 +18,9 @@ function newsLetter(props) {
 
                         <div className="containerform">
 
-                            <btn className="bouton" onClick={() => window.open("https://mail.google.com/mail/u/0/?fs=1&to=enactusinsat@gmail.com&tf=cm", "_blank")   } >
+                            <button className="bouton" onClick={() => window.open("https://mail.google.com/mail/u/0/?fs=1&to=enactusinsat@gmail.com&tf=cm", "_blank")   } >
                                 {props.language==="fr" ? "ENVOYER":
-                                "SEND"}</btn>
+                                "SEND"}</button>
 
                         </div>
                         <div className="privacy">{props.language==="fr" ?"Votre mail ne sera jamais partagé" :"We'll never share your email with anyone else" }</div>

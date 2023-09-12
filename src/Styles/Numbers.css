@@ -74,6 +74,9 @@
 
 
 }
+.title2-hovered{
+    color: white;
+}
 
 .numbers-section-heading {
     margin: auto;
@@ -120,11 +123,28 @@
     .container1{flex-wrap: wrap;
         height: 50vh;}
     .cards{    width: 42%;
-        height: 45%;
+        height: 46%;
     }
     .number-title{font-size:20px}
     .numbers-section-heading-container{margin-top: 5vh;}
     .title2{font-size: 14px}
+    .number-title-hovered{width: 100%;
+        text-align: center;
+        font-weight: 900;
+        font-size: 20px;
+        color: #252A34;
+        margin-bottom: 10%;
+        font-family: "FS Meridian";}
+    .title2-hovered{
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        color: #555555;
+        font-size: 14px}
+    .cards:hover{
+        background: #FDECCD;
+
+    }
 }
 
 

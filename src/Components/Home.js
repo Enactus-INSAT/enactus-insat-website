@@ -12,7 +12,6 @@ const Home = (props) => {
 
     const toggleStickyNav = function (entries) {
         const [entry] = entries;
-        console.log(entry);
         if (!entry.isIntersecting) setIsSticky(true);
         else setIsSticky(false);
     };
@@ -21,7 +20,6 @@ const Home = (props) => {
     useEffect(() => {
         const header = headerRef.current;
         setNavHeight(header.getBoundingClientRect().height);
-        console.log(navHeight);
         const headerObserver = new IntersectionObserver(toggleStickyNav, {
             root: null,
             threshold: 0,

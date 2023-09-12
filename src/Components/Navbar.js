@@ -105,7 +105,7 @@ const Navbar = (props) => {
                                    }}
                                    onMouseOut={() => {
                                        setLinkHovered(-1);
-                                   }}>{name}</a>
+                                   }} key={index}>{name}</a>
 
 
                         );
@@ -120,7 +120,7 @@ const Navbar = (props) => {
                                    }}
                                    onMouseOut={() => {
                                        setLinkHovered(-1);
-                                   }}>{name}</a>
+                                   }}key={index}>{name}</a>
                                 : <a href={link}
                                      onClick={(e) => scrollToSection(e, link)}
                                      className={isSticky ? "nav-element-sticky nav-element-sticky-hovered" : "nav-element"}
@@ -129,7 +129,7 @@ const Navbar = (props) => {
                                      }}
                                      onMouseOut={() => {
                                          setLinkHovered(-1);
-                                     }}>{name}</a>
+                                     }} key={index}>{name}</a>
                         );
                     })
 
@@ -151,7 +151,7 @@ const Navbar = (props) => {
                                    onMouseOut={() => {
                                        setLinkHovered(-1);
                                    }}
-                                > <SocialIcon/></a>
+                                   key={index}> <SocialIcon/></a>
                             </IconContext.Provider>
 
                             :
@@ -165,7 +165,7 @@ const Navbar = (props) => {
                                    onMouseOut={() => {
                                        setLinkHovered(-1);
                                    }}
-                                ><SocialIcon/></a>
+                                   key={index}><SocialIcon/></a>
                             </IconContext.Provider>
                     )
                 })
@@ -186,8 +186,8 @@ const Navbar = (props) => {
                                    onMouseOut={() => {
                                        setIconHovered(-1);
 
-                                   }}
-                                > <SocialIcon/></a>
+                                   } }
+                                   key={index}> <SocialIcon/></a>
                             </IconContext.Provider>
                             :
                             <IconContext.Provider value={{
@@ -204,7 +204,7 @@ const Navbar = (props) => {
                                        setIconHovered(-1);
 
                                    }}
-                                >
+                                   key={index}>
                                     <SocialIcon/></a>
 
                             </IconContext.Provider>

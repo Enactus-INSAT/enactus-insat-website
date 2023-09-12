@@ -27,6 +27,13 @@
     color: #F8C159;
     font-weight: 500;
 }
+.mail-notif1{ margin-bottom: 3vh;
+    margin-left: 2vw;
+    font-size: 15px;
+
+    font-weight: 600;
+    color: #F8C159;
+}
 
 .integration-form input::placeholder{
     color: #4D4D4D;
@@ -141,6 +148,11 @@ input[type="text"], input[type="password"] {
     left: 0%
 ;z-index: -100;
 
+}
+.form-err-cont{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
 }
 
 @media screen and (max-width: 600px) {

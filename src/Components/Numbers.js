@@ -69,11 +69,12 @@ function Numbers(props) {
                                  onMouseOut={()=>{
                                      setHovered(-1);
                                  }}
+                                 key={index}
                             >
                                 <div className="icon"><Icon  size={document.documentElement.clientWidth<500 ? 30:50} color='#F9CD7A'/>
                                 </div>
-                                <div className={hovered == index ? "number-title-hovered" : "number-title" }>{number}+</div>
-                                <div className="title2">{props.language==="fr" ? labelfr : labelen}</div>
+                                <div className={hovered === index ? "number-title-hovered" : "number-title" }>{number}+</div>
+                                <div className={hovered === index ?"title2-hovered":"title2"}>{props.language==="fr" ? labelfr : labelen}</div>
                             </div>
                         );
                     })
