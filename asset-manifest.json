@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/enactus-insat-website/static/css/main.fe75c762.css",
-    "main.js": "/enactus-insat-website/static/js/main.a6f77f2c.js",
+    "main.css": "/enactus-insat-website/static/css/main.783e8325.css",
+    "main.js": "/enactus-insat-website/static/js/main.052e7697.js",
     "static/media/phosphact.png": "/enactus-insat-website/static/media/phosphact.39e935c7d3a6a7e33921.png",
     "static/media/Rectangle.svg": "/enactus-insat-website/static/media/Rectangle.6b5a469da3b9f2fe232718f3951fd880.svg",
     "static/media/Cowcheck.png": "/enactus-insat-website/static/media/Cowcheck.cc0ad2972af02e50aec5.png",
@@ -12,8 +12,8 @@
     "static/media/workshop.png": "/enactus-insat-website/static/media/workshop.d5769c4fe6af5c0d7b44.png",
     "static/media/alumni.png": "/enactus-insat-website/static/media/alumni.4c7b39b3d57da90ac136.png",
     "static/media/Zigo.png": "/enactus-insat-website/static/media/Zigo.6d78fe15db4e4c5f86c8.png",
-    "static/media/Group 8996.png": "/enactus-insat-website/static/media/Group 8996.4cdce31abf348decbbb3.png",
     "static/media/vision-asset.png": "/enactus-insat-website/static/media/vision-asset.875942bdab76cccbfbb9.png",
+    "static/media/Group 8996.png": "/enactus-insat-website/static/media/Group 8996.a3121936c5f53e68fe8e.png",
     "static/media/Actualite.jpeg": "/enactus-insat-website/static/media/Actualite.3ebc19efd5808da5cfb8.jpeg",
     "static/media/Rectanglrcowcheck.png": "/enactus-insat-website/static/media/Rectanglrcowcheck.80aca2ed3e63581444f0.png",
     "static/media/Rectangleardhcom.png": "/enactus-insat-website/static/media/Rectangleardhcom.8abadd09ea7ab8781dfa.png",
@@ -49,11 +49,11 @@
     "static/media/projectArrow-right.svg": "/enactus-insat-website/static/media/projectArrow-right.f059f13385ed89f2b636b58b4207f070.svg",
     "static/media/projectArrow-left.svg": "/enactus-insat-website/static/media/projectArrow-left.97b4c8a9e7cf1f177883b301e39a784f.svg",
     "static/media/projectsOverlay.svg": "/enactus-insat-website/static/media/projectsOverlay.2b74f149c2569a1360747bb4bd4606d7.svg",
-    "main.fe75c762.css.map": "/enactus-insat-website/static/css/main.fe75c762.css.map",
-    "main.a6f77f2c.js.map": "/enactus-insat-website/static/js/main.a6f77f2c.js.map"
+    "main.783e8325.css.map": "/enactus-insat-website/static/css/main.783e8325.css.map",
+    "main.052e7697.js.map": "/enactus-insat-website/static/js/main.052e7697.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe75c762.css",
-    "static/js/main.a6f77f2c.js"
+    "static/css/main.783e8325.css",
+    "static/js/main.052e7697.js"
   ]
 }
